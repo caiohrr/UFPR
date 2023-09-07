@@ -1,15 +1,22 @@
+LIKWID_HOME=/home/soft/likwid
+
 CC = gcc
-CFLAGS = -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native
-objects = ep02.o
+CFLAGS = -I${LIKWID_HOME}/include -DLIKWID_PERFMON -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native 
+
+LFLAGS = -L${LIKWID_HOME}/lib -llikwid
+
+objects = perfEG.o utils.o
 
 all: $(objects)
-	$(CC) $(CFLAGS) $(objects) -o ep02
+	$(CC) $(CFLAGS) $(objects) -o perfEG $(LFLAGS) 
+perfEG.o: perfEG.c
+	$(CC) $(CFLAGS) -c perfEG.c
 
-ep02.o: ep02.c
-	$(CC) $(CFLAGS) -c ep02.c
+utils.o: utils.c
+	$(CC) $(CFLAGS) -c utils.c
 
 clean:
 	-rm -f *.o
 
 purge: clean
-	-rm -f ep02
+	-rm -f perfEG

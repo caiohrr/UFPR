@@ -1,15 +1,27 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native
-objects = ep02.o
+# PROGRAMA
+    PROG = perfEG
 
-all: $(objects)
-	$(CC) $(CFLAGS) $(objects) -o ep02
+# Compilador
+    CC     = gcc
+    CFLAGS = 
+    LFLAGS = -lm
 
-ep02.o: ep02.c
-	$(CC) $(CFLAGS) -c ep02.c
+# Lista de arquivos para distribuição
+DISTFILES = *.c *.h LEIAME* Makefile
+DISTDIR = `basename ${PWD}`
+
+.PHONY: all clean purge dist
 
 clean:
-	-rm -f *.o
+	@echo "Limpando sujeira ..."
+	@rm -f *~ *.bak
 
-purge: clean
-	-rm -f ep02
+purge:  clean
+	@echo "Limpando tudo ..."
+	@rm -f $(PROG) *.o core a.out $(DISTDIR) $(DISTDIR).tar
+
+dist: purge
+	@echo "Gerando arquivo de distribuição ($(DISTDIR).tar) ..."
+	@ln -s . $(DISTDIR)
+	@tar -cvf $(DISTDIR).tar $(addprefix ./$(DISTDIR)/, $(DISTFILES))
+	@rm -f $(DISTDIR)
