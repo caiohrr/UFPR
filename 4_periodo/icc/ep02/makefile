@@ -19,4 +19,4 @@ clean:
 	-rm -f *.o
 
 purge: clean
-	-rm -f perfEG
+	-rm -f perfEG FLOPS_DP.log

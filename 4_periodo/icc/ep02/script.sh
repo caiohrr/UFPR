@@ -11,15 +11,8 @@ echo "performance" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
 
 for k in $METRICA
 do
-    likwid-perfctr -C ${CPU} -g ${k} -m ./perfEG >${k}_SemOtimiz.log
+    likwid-perfctr -C ${CPU} -g ${k} -m ./perfEG >${k}.log
 done
-
-#rm -f teste
-#gcc ${CFLAGS} -O3 teste.c -o teste ${LFLAGS}
-#for k in $METRICA
-#do
-#    likwid-perfctr -C ${CPU} -g ${k} -m ./teste >${k}_Otimiz.log
-#done
 
 echo "powersave" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
 
