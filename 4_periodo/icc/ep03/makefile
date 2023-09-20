@@ -3,7 +3,7 @@ LIKWID_HOME=/home/soft/likwid
 CC = gcc
 CFLAGS = -I${LIKWID_HOME}/include -DLIKWID_PERFMON -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native 
 
-LFLAGS = -L${LIKWID_HOME}/lib -llikwid
+LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm -g
 
 objects = interpola.o utils.o
 
@@ -19,4 +19,4 @@ clean:
 	-rm -f *.o
 
 purge: clean
-	-rm -f interpola FLOPS_DP.log
+	-rm -f interpola FLOPS_DP.log resultado.out
