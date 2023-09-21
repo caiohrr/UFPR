@@ -15,4 +15,3 @@ e entrada é o arquivo que contém o grau do polinômio e os pontos.
 Limitações do programa:
 O programa da Segmentation Fault quando o tamanho (n) é negativo.
 Isso ocorre porque o n é um Unsigned Int.
-
