@@ -5,7 +5,7 @@ CFLAGS = -I${LIKWID_HOME}/include -DLIKWID_PERFMON -Wall -Wextra -g -lm -std=gnu
 
 LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm -g
 
-objects = ajustePol.o libIntervalar.o
+objects = ajustePol.o libIntervalar.o libSistemaIntervalar.o
 
 all: $(objects)
 	$(CC) $(CFLAGS) $(objects) -o ajustePol $(LFLAGS) 
@@ -16,6 +16,8 @@ ajustePol.o: ajustePol.c
 libIntervalar.o: libIntervalar.c
 	$(CC) $(CFLAGS) -c libIntervalar.c
 
+libSistemaIntervalar.o: libIntervalar.c libSistemaIntervalar.c
+	$(CC) $(CFLAGS) -c libSistemaIntervalar.c
 clean:
 	-rm -f *.o
 

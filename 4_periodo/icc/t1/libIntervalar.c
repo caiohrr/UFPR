@@ -110,4 +110,3 @@ NumIntervalar expIntervalar(NumIntervalar n, uint p) {
 void imprimirNumIntervalar(NumIntervalar num) {
         printf("[%1.8e, %1.8e]", num.menor, num.maior);
 }
-
