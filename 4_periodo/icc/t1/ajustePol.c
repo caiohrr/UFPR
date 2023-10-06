@@ -13,21 +13,34 @@ double *criarVetorDouble(uint n) {
         return vetorDouble;
 }
 
-void lerEntrada(double *vetorX, double *vetorY, uint n) {
+void lerEntrada(double *vetorX, double *vetorY, uint nPontos) {
          
-        for (uint i = 0; i < n; i++) {
+        for (uint i = 0; i < nPontos; i++) {
                 scanf("%lf %lf", &vetorX[i], &vetorY[i]);
         }
 }
 
-void gerarSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetorX, NumIntervalar *vetorY, NumIntervalar *vetorB, uint n, uint k) {
+void calcularResiduo(NumIntervalar *vetorR, NumIntervalar *vetorIntervalarCoef, NumIntervalar *vetorX, NumIntervalar *vetorY, uint grau, uint nPontos) {
 
-        for (uint i = 0; i < k; i++) {
+        for (uint i = 0; i < nPontos; i++) {
                 NumIntervalar tmp;
-                for (uint j = 0; j < k; j++) {
+                tmp.menor = 0;
+                tmp.maior = 0;
+                for (uint j = 0; j < grau; j++) {
+                       tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorIntervalarCoef[j], expIntervalar(vetorX[i], j)));  
+                }
+                vetorR[i] = subtracaoIntervalar(vetorY[i], tmp); 
+        } 
+}
+
+void gerarSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetorX, NumIntervalar *vetorY, NumIntervalar *vetorB, uint grau, uint nPontos) {
+
+        for (uint i = 0; i < grau; i++) {
+                NumIntervalar tmp;
+                for (uint j = 0; j < grau; j++) {
                         tmp.menor = 0;
                         tmp.maior = 0;
-                        for (uint l = 0; l < n; l++) {
+                        for (uint l = 0; l < nPontos; l++) {
                                 //if (matriz[i - 1][j + 1] != NULL)
                                         //tmp = matriz[i - 1][j + 1];
                                         //break;
@@ -39,7 +52,7 @@ void gerarSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetorX, NumIn
                 NumIntervalar tmpX;
                 tmp.menor = 0;
                 tmp.maior = 0;
-                for (uint m = 0; m < n; m++) {
+                for (uint m = 0; m < nPontos; m++) {
                         tmpX = expIntervalar(vetorX[m], i);
                         tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorY[m], tmpX)); 
                 }
@@ -49,30 +62,39 @@ void gerarSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetorX, NumIn
 
 int main() {
 
-        uint n, k;
+        uint grau, nPontos;
         double *vetorX, *vetorY;
 
-        scanf("%u %u", &n, &k);
+        scanf("%u %u", &grau, &nPontos);
 
-        vetorX = criarVetorDouble(n);
-        vetorY = criarVetorDouble(n);
+        vetorX = criarVetorDouble(nPontos);
+        vetorY = criarVetorDouble(nPontos);
 
-        lerEntrada(vetorX, vetorY, n);
+        lerEntrada(vetorX, vetorY, nPontos);
 
-        NumIntervalar *vetorIntervalarX = criarVetorIntervalar(n);
-        NumIntervalar *vetorIntervalarY = criarVetorIntervalar(n);
-        NumIntervalar *vetorIntervalarB = criarVetorIntervalar(n);
-        NumIntervalar **matrizIntervalar = criarMatrizIntervalar(k);
+        NumIntervalar *vetorIntervalarX = criarVetorIntervalar(nPontos);
+        NumIntervalar *vetorIntervalarY = criarVetorIntervalar(nPontos);
+        NumIntervalar *vetorIntervalarB = criarVetorIntervalar(nPontos);
+        NumIntervalar *vetorIntervalarR = criarVetorIntervalar(nPontos);
+        NumIntervalar *vetorIntervalarCoef = criarVetorIntervalar(grau);
+        NumIntervalar **matrizIntervalar = criarMatrizIntervalar(grau);
 
-        for (uint i = 0; i < n; i++) {
+        for (uint i = 0; i < nPontos; i++) {
                 vetorIntervalarX[i] = doubleToNumIntervalar(vetorX[i]);
                 vetorIntervalarY[i] = doubleToNumIntervalar(vetorY[i]);
         }
 
         //imprimirVetorIntervalar(vetorIntervalarY, n);
 
-        gerarSistemaIntervalar(matrizIntervalar, vetorIntervalarX, vetorIntervalarY, vetorIntervalarB, n, k);
-        imprimirSistemaIntervalar(matrizIntervalar, vetorIntervalarB, k);
+        gerarSistemaIntervalar(matrizIntervalar, vetorIntervalarX, vetorIntervalarY, vetorIntervalarB, grau, nPontos);
+        eliminacaoGauss(matrizIntervalar, vetorIntervalarB, grau);
+        retrossubsIntervalar(matrizIntervalar, vetorIntervalarB, vetorIntervalarCoef, grau);
+        //imprimirSistemaIntervalar(matrizIntervalar, vetorIntervalarB, grau);
+        //printf("\n");
+        imprimirVetorIntervalar(vetorIntervalarCoef, grau);
+        calcularResiduo(vetorIntervalarR, vetorIntervalarCoef, vetorIntervalarX, vetorIntervalarY, grau, nPontos);
+        printf("\n");
+        imprimirVetorIntervalar(vetorIntervalarR, nPontos);
         
         printf("\n");
 
@@ -81,7 +103,9 @@ int main() {
         free(vetorIntervalarX);
         free(vetorIntervalarY);
         free(vetorIntervalarB);
-        destruirMatrizIntervalar(matrizIntervalar, k);
+        free(vetorIntervalarR);
+        free(vetorIntervalarCoef);
+        destruirMatrizIntervalar(matrizIntervalar, grau);
 
         return 0;
 }

@@ -37,7 +37,7 @@ void destruirVetorIntervalar(NumIntervalar *vetor) {
 void imprimirVetorIntervalar(NumIntervalar *vetor, uint n) {
 
         for (uint i = 0; i < n; i++) 
-                printf("[%.5lf, %.5lf]", vetor[i].menor, vetor[i].maior);
+                printf("[%1.8e, %1.8e] ", vetor[i].menor, vetor[i].maior);
 }
 
 //Copia o vetor original e coloca seus valores no novo
@@ -74,9 +74,9 @@ void imprimirMatrizIntervalar(NumIntervalar **matriz, uint n) {
         for (uint i = 0; i < n; i++) {
                 uint j;
                 for (j = 0; j < n - 1; j++) {
-                        printf("[%.5lf %.5lf], ", matriz[i][j].menor, matriz[i][j].maior);
+                        printf("[%1.8e %1.8e], ", matriz[i][j].menor, matriz[i][j].maior);
                 }
-                printf("[%.5lf %.5lf]\n", matriz[i][j].menor, matriz[i][j].maior);
+                printf("[%1.8e %1.8e]\n", matriz[i][j].menor, matriz[i][j].maior);
         }
 }
 
@@ -96,11 +96,11 @@ void imprimirSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uin
         for (uint i = 0; i < n; i++) {
                 uint j;
                 for (j = 0; j < n - 1; j++) {
-                        printf("[%.5lf %.5lf], ", matriz[i][j].menor, matriz[i][j].maior);
+                        printf("[%1.8e %1.8e], ", matriz[i][j].menor, matriz[i][j].maior);
                 }
-                printf("[%.5lf %.5lf]  ", matriz[i][j].menor, matriz[i][j].maior);
+                printf("[%1.8e %1.8e]  ", matriz[i][j].menor, matriz[i][j].maior);
 
-                printf("[%.5lf %.5lf]\n", vetor[i].menor, vetor[i].maior);
+                printf("[%1.8e %1.8e]\n", vetor[i].menor, vetor[i].maior);
         }
 }
 

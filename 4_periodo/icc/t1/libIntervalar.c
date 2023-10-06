@@ -5,21 +5,40 @@
 #include <stdlib.h>
 #include "libIntervalar.h"
 
+int compara(double n1, double n2) {
+
+        if (fabs(n1 - n2) < DBL_EPSILON)
+                return 0;
+        else if (n1 - n2 < DBL_EPSILON)
+                return 1;
+        return -1;
+}
+
 double minDouble(double a, double b) {
-        return (a < b) ? a : b;
+
+        if (compara(a, b) == 1)
+                return a;
+        return b;
 }
 
 double maxDouble(double a, double b) {
-        return (a > b) ? a : b;
+
+        if (compara(a, b) == 1)
+                return b;
+        return a;
 }
 
 NumIntervalar doubleToNumIntervalar(double num) {
 
         NumIntervalar num_inter;
 
-        num_inter.menor = nextafterf(num, num * 2);
-        num_inter.maior = nextafterf(num, num / 2);
-
+        if (compara(0, num) == 1) { 
+                num_inter.menor = nextafter(num, num * 2);
+                num_inter.maior = nextafter(num, num / 2);
+        } else {
+                num_inter.maior = nextafter(num, num * 2);
+                num_inter.menor = nextafter(num, num / 2);
+        }
         return num_inter;
 }
 
