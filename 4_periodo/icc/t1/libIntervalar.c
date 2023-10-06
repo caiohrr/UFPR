@@ -91,7 +91,7 @@ NumIntervalar expIntervalar(NumIntervalar n, uint p) {
         NumIntervalar resultado;
         
         if (p == 0) {
-                resultado.menor = resultado.maior = 0;
+                resultado.menor = resultado.maior = 1;
         } else if ((p % 2 != 0) || (n.menor >= 0)) {
                 resultado.menor = pow(n.menor, p);
                 resultado.maior = pow(n.maior, p);

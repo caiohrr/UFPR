@@ -13,6 +13,18 @@ NumIntervalar *criarVetorIntervalar(uint n) {
         return vetor;
 }
 
+NumIntervalar **criarMatrizIntervalar(uint n) {
+
+        NumIntervalar **matriz = malloc(sizeof(NumIntervalar*) * n);
+        if (matriz == NULL)
+                return NULL;
+        for (uint i = 0; i < n; i++) {
+                matriz[i] = criarVetorIntervalar(n);
+        }
+
+        return matriz;
+}
+
 void destruirVetorIntervalar(NumIntervalar *vetor) {
         free(vetor);
 }
@@ -35,18 +47,6 @@ void copiarVetorIntervalar(NumIntervalar *original, NumIntervalar *novo, uint n)
                 novo[i].menor = original[i].menor;
                 novo[i].maior = original[i].maior;
         }
-}
-
-double **criarMatrizIntervalar(uint n) {
-
-        double **matriz = malloc(sizeof(NumIntervalar *) * n);
-        if (matriz == NULL)
-                return NULL;
-        for (uint i = 0; i < n; i++) {
-                matriz[i] = malloc(sizeof(NumIntervalar) * n);
-        }
-
-        return matriz;
 }
 
 void destruirMatrizIntervalar(NumIntervalar **matriz, uint n) {
@@ -72,10 +72,11 @@ void lerMatrizIntervalar(NumIntervalar **matriz, uint n) {
 void imprimirMatrizIntervalar(NumIntervalar **matriz, uint n) {
 
         for (uint i = 0; i < n; i++) {
-                for (uint j = 0; j < n; j++) {
-                        printf("[%.5lf %.5lf]", matriz[i][j].menor, matriz[i][j].maior);
+                uint j;
+                for (j = 0; j < n - 1; j++) {
+                        printf("[%.5lf %.5lf], ", matriz[i][j].menor, matriz[i][j].maior);
                 }
-                printf("\n");
+                printf("[%.5lf %.5lf]\n", matriz[i][j].menor, matriz[i][j].maior);
         }
 }
 
@@ -90,12 +91,14 @@ void copiarMatriz(NumIntervalar **original, NumIntervalar **nova, uint n) {
 }
 
 //Imprime um sistema linear
-void imprimirSistemaNumIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uint n) {
+void imprimirSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uint n) {
 
         for (uint i = 0; i < n; i++) {
-                for (uint j = 0; j < n; j++) {
-                        printf("[%.5lf %.5lf]", matriz[i][j].menor, matriz[i][j].maior);
+                uint j;
+                for (j = 0; j < n - 1; j++) {
+                        printf("[%.5lf %.5lf], ", matriz[i][j].menor, matriz[i][j].maior);
                 }
+                printf("[%.5lf %.5lf]  ", matriz[i][j].menor, matriz[i][j].maior);
 
                 printf("[%.5lf %.5lf]\n", vetor[i].menor, vetor[i].maior);
         }

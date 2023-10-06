@@ -2,6 +2,8 @@
 
 NumIntervalar *criarVetorIntervalar(uint n);
 
+NumIntervalar **criarMatrizIntervalar(uint n);
+
 void destruirVetorIntervalar(NumIntervalar *vetor);
 
 //void lerVetor(double *vetor, uint n);
@@ -19,7 +21,7 @@ void imprimirMatrizIntervalar(NumIntervalar **matriz, uint n);
 void copiarMatriz(NumIntervalar **original, NumIntervalar **nova, uint n);
 
 //Imprime um sistema linear
-void imprimirSistemaNumIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uint n);
+void imprimirSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uint n);
 
 //Encontra o valor maximo em uma coluna 'i' 
 uint encontraMaxIntervalar(NumIntervalar **matriz, uint n, uint i);
