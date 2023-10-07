@@ -7,7 +7,7 @@ CFLAGS = -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native
 #LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm -g
 LFLAGS = -lm -g
 
-objects = ajustePol.o libIntervalar.o libSistemaIntervalar.o
+objects = ajustePol.o libIntervalar.o libSistemaIntervalar.o libAjustePolinomialIntervalar.o
 
 all: $(objects)
 	$(CC) $(CFLAGS) $(objects) -o ajustePol $(LFLAGS) 
@@ -20,6 +20,10 @@ libIntervalar.o: libIntervalar.c
 
 libSistemaIntervalar.o: libIntervalar.c libSistemaIntervalar.c
 	$(CC) $(CFLAGS) -c libSistemaIntervalar.c
+
+libAjustePolinomialIntervalar.o: libIntervalar.c libSistemaIntervalar.c libAjustePolinomialIntervalar.o
+	$(CC) $(CFLAGS) -c libAjustePolinomialIntervalar.c
+
 clean:
 	-rm -f *.o
 

@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
-//#include "libIntervalar.h"
 #include "libSistemaIntervalar.h"
-//#include "likwid.h"
 
 NumIntervalar *criarVetorIntervalar(uint n) {
         NumIntervalar *vetor = malloc(sizeof(NumIntervalar) * n);
@@ -29,18 +27,12 @@ void destruirVetorIntervalar(NumIntervalar *vetor) {
         free(vetor);
 }
 
-//void lerVetor(double *vetor, uint n) {
-//        for (uint i = 0; i < n; i++)
-//                scanf("%lf", &vetor[i]);
-//}
-
 void imprimirVetorIntervalar(NumIntervalar *vetor, uint n) {
 
         for (uint i = 0; i < n; i++) 
                 printf("[%1.8e, %1.8e] ", vetor[i].menor, vetor[i].maior);
 }
 
-//Copia o vetor original e coloca seus valores no novo
 void copiarVetorIntervalar(NumIntervalar *original, NumIntervalar *novo, uint n) {
 
         for (uint i = 0; i < n; i++) {
@@ -58,7 +50,6 @@ void destruirMatrizIntervalar(NumIntervalar **matriz, uint n) {
         free(matriz);
 }
 
-//Le uma matriz quadrada de ordem 'n'
 void lerMatrizIntervalar(NumIntervalar **matriz, uint n) {
 
         for (uint i = 0; i < n; i++) {
@@ -68,7 +59,6 @@ void lerMatrizIntervalar(NumIntervalar **matriz, uint n) {
         }
 }
 
-//Imprime uma matriz quadrada de ordem 'n'
 void imprimirMatrizIntervalar(NumIntervalar **matriz, uint n) {
 
         for (uint i = 0; i < n; i++) {
@@ -90,7 +80,6 @@ void copiarMatriz(NumIntervalar **original, NumIntervalar **nova, uint n) {
         }
 }
 
-//Imprime um sistema linear
 void imprimirSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uint n) {
 
         for (uint i = 0; i < n; i++) {
@@ -104,7 +93,6 @@ void imprimirSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetor, uin
         }
 }
 
-//Encontra o valor maximo em uma coluna 'i' 
 uint encontraMaxIntervalar(NumIntervalar **matriz, uint n, uint i) {
 
         double max = matriz[i][i].menor;
@@ -130,7 +118,6 @@ void retrossubsIntervalar(NumIntervalar **matriz, NumIntervalar *b, NumIntervala
         }
 }
 
-//Troca as linhas 'i' e 'pivo'
 void trocaLinhaIntervalar(NumIntervalar **matriz, uint n, NumIntervalar *b, int i, uint pivo) {
 
         NumIntervalar tmp, tmp2;
