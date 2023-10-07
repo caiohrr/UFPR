@@ -2,9 +2,9 @@ LIKWID_HOME=/home/soft/likwid
 
 CC = gcc
 CFLAGS = -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native 
-#CFLAGS = -I${LIKWID_HOME}/include -DLIKWID_PERFMON -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native 
+CFLAGS = -I${LIKWID_HOME}/include -DLIKWID_PERFMON -Wall -Wextra -g -lm -std=gnu99 -O3 -mavx -march=native 
 
-#LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm -g
+LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm -g
 LFLAGS = -lm -g
 
 objects = ajustePol.o libIntervalar.o libSistemaIntervalar.o libAjustePolinomialIntervalar.o
