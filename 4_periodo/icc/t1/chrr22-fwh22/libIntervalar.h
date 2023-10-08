@@ -1,3 +1,6 @@
+//Caio Henrique Ramos Rufino (GRR20224386)
+//Frank Wolff Hannemann (GRR20224758)
+
 typedef unsigned int uint;
 
 //Estrutura que contém o intervalo numérico, menor é o início e maior é o fim do intervalo

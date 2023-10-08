@@ -1,3 +1,6 @@
+//Caio Henrique Ramos Rufino (GRR20224386)
+//Frank Wolff Hannemann (GRR20224758)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "libSistemaIntervalar.h"
@@ -40,9 +43,6 @@ void gerarSistemaIntervalar(NumIntervalar **matriz, NumIntervalar *vetorX, NumIn
                         tmp.menor = 0;
                         tmp.maior = 0;
                         for (uint l = 0; l < nPontos; l++) {
-                                //if (matriz[i - 1][j + 1] != NULL)
-                                        //tmp = matriz[i - 1][j + 1];
-                                        //break;
                                 tmp = somaIntervalar(tmp, expIntervalar(vetorX[l], i + j));
                         }
                         matriz[i][j] = tmp;

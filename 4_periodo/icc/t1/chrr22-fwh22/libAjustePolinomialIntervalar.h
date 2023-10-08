@@ -1,3 +1,6 @@
+//Caio Henrique Ramos Rufino (GRR20224386)
+//Frank Wolff Hannemann (GRR20224758)
+
 #include "libSistemaIntervalar.h"
 
 //Cria um vetor de n elementos do tipo double

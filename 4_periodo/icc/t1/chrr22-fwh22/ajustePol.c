@@ -1,10 +1,12 @@
+//Caio Henrique Ramos Rufino (GRR20224386)
+//Frank Wolff Hannemann (GRR20224758)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "likwid.h"
 #include "libAjustePolinomialIntervalar.h"
 
 int main() {
-
 
         uint grau, nPontos;
         double *vetorX, *vetorY;
@@ -43,12 +45,8 @@ int main() {
         imprimirVetorIntervalar(vetorIntervalarCoef, grau);
 
         calcularResiduo(vetorIntervalarR, vetorIntervalarCoef, vetorIntervalarX, vetorIntervalarY, grau, nPontos);
-
-
-
         printf("\n");
         imprimirVetorIntervalar(vetorIntervalarR, nPontos);
-        
         printf("\n");
 
         free(vetorX);
@@ -59,7 +57,6 @@ int main() {
         free(vetorIntervalarR);
         free(vetorIntervalarCoef);
         destruirMatrizIntervalar(matrizIntervalar, grau);
-
 
         return 0;
 }
