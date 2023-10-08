@@ -5,7 +5,6 @@
 
 int main() {
 
-        LIKWID_MARKER_INIT;
 
         uint grau, nPontos;
         double *vetorX, *vetorY;
@@ -29,19 +28,23 @@ int main() {
                 vetorIntervalarY[i] = doubleToNumIntervalar(vetorY[i]);
         }
 
-        //imprimirVetorIntervalar(vetorIntervalarY, n);
 
-        LIKWID_MARKER_START("ajustePol");
-
+        LIKWID_MARKER_INIT;
+        LIKWID_MARKER_START("GerarSistema");
         gerarSistemaIntervalar(matrizIntervalar, vetorIntervalarX, vetorIntervalarY, vetorIntervalarB, grau, nPontos);
+        LIKWID_MARKER_STOP("GerarSistema");
+
+        LIKWID_MARKER_START("ResolverSistema");
         eliminacaoGauss(matrizIntervalar, vetorIntervalarB, grau);
         retrossubsIntervalar(matrizIntervalar, vetorIntervalarB, vetorIntervalarCoef, grau);
-        //imprimirSistemaIntervalar(matrizIntervalar, vetorIntervalarB, grau);
-        //printf("\n");
+        LIKWID_MARKER_STOP("ResolverSistema");
+        LIKWID_MARKER_CLOSE;
+
         imprimirVetorIntervalar(vetorIntervalarCoef, grau);
+
         calcularResiduo(vetorIntervalarR, vetorIntervalarCoef, vetorIntervalarX, vetorIntervalarY, grau, nPontos);
 
-        LIKWID_MARKER_STOP("ajustePol");
+
 
         printf("\n");
         imprimirVetorIntervalar(vetorIntervalarR, nPontos);
@@ -57,7 +60,6 @@ int main() {
         free(vetorIntervalarCoef);
         destruirMatrizIntervalar(matrizIntervalar, grau);
 
-        LIKWID_MARKER_CLOSE;
 
         return 0;
 }
