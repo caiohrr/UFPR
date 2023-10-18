@@ -3,15 +3,17 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "utils.h"
 #include "likwid.h"
 #include "libAjustePolinomialIntervalar.h"
 
 int main() {
 
         uint grau, nPontos;
-        double *vetorX, *vetorY;
+        double *vetorX, *vetorY, tempoGerarSistema, tempoResolverSistema;
 
         scanf("%u %u", &grau, &nPontos);
+        grau++;
 
         vetorX = criarVetorDouble(nPontos);
         vetorY = criarVetorDouble(nPontos);
@@ -30,17 +32,20 @@ int main() {
                 vetorIntervalarY[i] = doubleToNumIntervalar(vetorY[i]);
         }
 
-
+        tempoGerarSistema = timestamp();
         LIKWID_MARKER_INIT;
         LIKWID_MARKER_START("GerarSistema");
         gerarSistemaIntervalar(matrizIntervalar, vetorIntervalarX, vetorIntervalarY, vetorIntervalarB, grau, nPontos);
         LIKWID_MARKER_STOP("GerarSistema");
+        tempoGerarSistema = timestamp() - tempoGerarSistema;
 
+        tempoResolverSistema = timestamp();
         LIKWID_MARKER_START("ResolverSistema");
         eliminacaoGauss(matrizIntervalar, vetorIntervalarB, grau);
         retrossubsIntervalar(matrizIntervalar, vetorIntervalarB, vetorIntervalarCoef, grau);
         LIKWID_MARKER_STOP("ResolverSistema");
         LIKWID_MARKER_CLOSE;
+        tempoResolverSistema = timestamp() - tempoResolverSistema;
 
         imprimirVetorIntervalar(vetorIntervalarCoef, grau);
 
@@ -48,6 +53,7 @@ int main() {
         printf("\n");
         imprimirVetorIntervalar(vetorIntervalarR, nPontos);
         printf("\n");
+        printf("%1.8e\n%1.8e\n", tempoGerarSistema, tempoResolverSistema);
 
         free(vetorX);
         free(vetorY);
