@@ -40,8 +40,7 @@ static inline real_t generateRandomB() {
  *
  */
 
-MatRow geraMatRow (int m, int n, int zerar)
-{
+MatRow geraMatRow (int m, int n, int zerar) {
         MatRow matriz = (real_t *) malloc(m*n*sizeof(real_t));
 
         if (matriz) {
@@ -67,8 +66,7 @@ MatRow geraMatRow (int m, int n, int zerar)
  *
  */
 
-Vetor geraVetor (int n, int zerar)
-{
+Vetor geraVetor (int n, int zerar) {
         Vetor vetor = (real_t *) malloc(n*sizeof(real_t));
 
         if (vetor) {
@@ -78,8 +76,7 @@ Vetor geraVetor (int n, int zerar)
                         for (int i=0; i < n; ++i)
                         vetor[i] = generateRandomB();
         }
-
-        return (vetor);
+return (vetor);
 }
 
 /**
@@ -88,8 +85,7 @@ Vetor geraVetor (int n, int zerar)
  *  @param  ponteiro para vetor
  *
  */
-void liberaVetor (void *vet)
-{
+void liberaVetor (void *vet) {
         free(vet);
 }
 
@@ -120,15 +116,15 @@ void multMatVetV2(MatRow mat, Vetor v, int m, int n, Vetor res) {
         if (res) {
                 int i, j;
 
-                // Loop jamming: Combine two loops into one
-                for (i = 0; i < m; i += 2) {
+                for (i = 0; i < m - m % 4; i += 4) {
                         for (j = 0; j < n; j++) {
                                 res[i] += mat[n * i + j] * v[j];
                                 res[i + 1] += mat[n * (i + 1) + j] * v[j];
+                                res[i + 2] += mat[n * (i + 2) + j] * v[j];
+                                res[i + 3] += mat[n * (i + 3) + j] * v[j];
                         }
                 }
 
-                // Loop unrolling: Unroll the loop by a factor of 2
                 for (; i < m; i++) {
                         for (j = 0; j < n; j++) {
                                 res[i] += mat[n * i + j] * v[j];
@@ -148,9 +144,7 @@ void multMatVetV2(MatRow mat, Vetor v, int m, int n, Vetor res) {
  *
  */
 
-void multMatMat (MatRow A, MatRow B, int n, MatRow C)
-{
-
+void multMatMat (MatRow A, MatRow B, int n, MatRow C) {
         /* Efetua a multiplicação */
         for (int i=0; i < n; ++i)
                 for (int j=0; j < n; ++j)
@@ -158,6 +152,24 @@ void multMatMat (MatRow A, MatRow B, int n, MatRow C)
                                 C[i*n+j] += A[i*n+k] * B[k*n+j];
 }
 
+void multMatMatV2(MatRow A, MatRow B, int n, MatRow C) {
+    int blockSize = 16;  // Choose an appropriate block size based on your architecture
+    
+    for (int i = 0; i < n; i += blockSize) {
+        for (int j = 0; j < n; j += blockSize) {
+            for (int k = 0; k < n; k += blockSize) {
+                for (int ii = i; ii < i + blockSize && ii < n; ++ii) {
+                    for (int jj = j; jj < j + blockSize && jj < n; ++jj) {
+                        C[ii * n + jj] = 0.0;
+                        for (int kk = k; kk < k + blockSize && kk < n; ++kk) {
+                            C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /**
  *  Funcao prnMat:  Imprime o conteudo de uma matriz em stdout
@@ -167,8 +179,7 @@ void multMatMat (MatRow A, MatRow B, int n, MatRow C)
  *
  */
 
-void prnMat (MatRow mat, int m, int n)
-{
+void prnMat (MatRow mat, int m, int n) {
         for (int i=0; i < m; ++i) {
                 for (int j=0; j < n; ++j)
                         printf(DBL_FIELD, mat[n*i + j]);
@@ -184,8 +195,7 @@ void prnMat (MatRow mat, int m, int n)
  *
  */
 
-void prnVetor (Vetor vet, int n)
-{
+void prnVetor (Vetor vet, int n) {
         for (int i=0; i < n; ++i)
                 printf(DBL_FIELD, vet[i]);
         printf(SEP_RES);

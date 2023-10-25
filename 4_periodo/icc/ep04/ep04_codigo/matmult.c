@@ -80,6 +80,9 @@ int main (int argc, char *argv[]) {
         multMatMat(mRow_1, mRow_2, n, resMat);
         tempoMatMat = timestamp() - tempoMatMat;
 
+        rtime_t tempoMatMatV2 = timestamp();
+        multMatMatV2(mRow_1, mRow_2, n, resMat);
+        tempoMatMatV2 = timestamp() - tempoMatMatV2;
 
 #ifdef _DEBUG_
         prnVetor(res, n);
@@ -88,6 +91,7 @@ int main (int argc, char *argv[]) {
 
         printf("Tempo matriz vetor: %lf\nTempo matriz matriz: %lf\n", tempoMatVet, tempoMatMat);
         printf("Tempo matriz vetor(V2): %lf\n", tempoMatVetV2);
+        printf("Tempo matriz matriz(V2): %lf\n", tempoMatMatV2);
         liberaVetor((void*) mRow_1);
         liberaVetor((void*) mRow_2);
         liberaVetor((void*) resMat);
