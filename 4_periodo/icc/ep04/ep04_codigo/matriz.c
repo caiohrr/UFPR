@@ -76,7 +76,7 @@ Vetor geraVetor (int n, int zerar) {
                         for (int i=0; i < n; ++i)
                         vetor[i] = generateRandomB();
         }
-return (vetor);
+        return (vetor);
 }
 
 /**
@@ -152,24 +152,125 @@ void multMatMat (MatRow A, MatRow B, int n, MatRow C) {
                                 C[i*n+j] += A[i*n+k] * B[k*n+j];
 }
 
-void multMatMatV2(MatRow A, MatRow B, int n, MatRow C) {
-    int blockSize = 16;  // Choose an appropriate block size based on your architecture
-    
-    for (int i = 0; i < n; i += blockSize) {
-        for (int j = 0; j < n; j += blockSize) {
-            for (int k = 0; k < n; k += blockSize) {
-                for (int ii = i; ii < i + blockSize && ii < n; ++ii) {
-                    for (int jj = j; jj < j + blockSize && jj < n; ++jj) {
-                        C[ii * n + jj] = 0.0;
-                        for (int kk = k; kk < k + blockSize && kk < n; ++kk) {
-                            C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+//void multMatMatV2(MatRow A, MatRow B, int n, MatRow C, int blockSize) {
+//        //int blockSize = 8;  // Choose an appropriate block size based on your architecture
+//
+//        for (int i = 0; i < n; i += blockSize) {
+//                for (int j = 0; j < n; j += blockSize) {
+//                        for (int k = 0; k < n; k += blockSize) {
+//                                for (int ii = i; ii < i + blockSize && ii < n; ++ii) {
+//                                        for (int jj = j; jj < j + blockSize && jj < n; jj += 1) {
+//                                                C[ii * n + jj] = 0.0;
+//                                                //C[ii * n + jj + 1] = 0.0;
+//                                                //C[ii * n + jj + 2] = 0.0;
+//                                                //C[ii * n + jj + 3] = 0.0;
+//                                                for (int kk = k; kk < k + blockSize && kk < n; ++kk) {
+//                                                        C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+//                                                        //C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+//                                                        //C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+//                                                        //C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+//                                                }
+//                                        }
+//                                }
+//                        }
+//                }
+//        }
+//}
+
+void multMatMatV2(MatRow A, MatRow B, int n, MatRow C, int blockSize) {
+        //int blockSize = 8;  // Choose an appropriate block size based on your architecture
+
+        for (int i = 0; i < n; i += blockSize) {
+                for (int j = 0; j < n; j += blockSize) {
+                        for (int k = 0; k < n; k += blockSize) {
+                                for (int ii = i; ii < i + blockSize && ii < n; ++ii) {
+                                        for (int jj = j; jj < j + blockSize && jj < n - (n % 4); jj += 4) {
+                                                C[ii * n + jj] = 0.0;
+                                                C[ii * n + jj + 1] = 0.0;
+                                                C[ii * n + jj + 2] = 0.0;
+                                                C[ii * n + jj + 3] = 0.0;
+                                                for (int kk = k; kk < k + blockSize && kk < n; ++kk) {
+                                                        C[ii * n + jj] += A[ii * n + kk] * B[kk * n + jj];
+                                                        C[ii * n + jj + 1] += A[ii * n + kk] * B[kk * n + jj + 1];
+                                                        C[ii * n + jj + 2] += A[ii * n + kk] * B[kk * n + jj + 2];
+                                                        C[ii * n + jj + 3] += A[ii * n + kk] * B[kk * n + jj + 3];
+                                                }
+                                        }
+                                }
                         }
+                }
+        }
+}
+
+void multMatMatV2_2(MatRow A, MatRow B, MatRow C, int N, int M, int K) {
+    const int block_size = 128 / sizeof(double); // 64 = common cache line size
+
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < K; j++) {
+            C[K * i + j] = 0;
+        }
+    }
+
+    for (int i0 = 0; i0 < N; i0 += block_size) {
+        int imax = i0 + block_size > N ? N : i0 + block_size;
+
+        for (int j0 = 0; j0 < K; j0 += block_size) {
+            int jmax = j0 + block_size > K ? K : j0 + block_size;
+
+            for (int k0 = 0; k0 < M; k0 += block_size) {
+                int kmax = k0 + block_size > M ? M : k0 + block_size;
+
+                for (int i1 = i0; i1 < imax; i1++) {
+                    for (int j1 = j0; j1 < jmax; j1++) {
+                        double sum = 0;
+
+                        for (int k1 = k0; k1 < kmax; k1++) {
+                            sum += A[i1 * M + k1] * B[k1 * K + j1];
+                        }
+
+                        C[i1 * K + j1] += sum;
                     }
                 }
             }
         }
     }
 }
+
+
+//void multMatMatV2_2(MatRow A , MatRow B, MatRow C, int N, int M, int K) {
+//        const int block_size = 128 / sizeof(double); // 64 = common cache line size
+//        for (int i = 0; i < N; i++) {
+//                for(int j = 0; j < K; j++) {
+//                        C[K * i + j] = 0;
+//                }
+//        }
+//        for (int i0 = 0; i0 < N; i0 += block_size) {
+//                int imax = i0 + block_size > N ? N : i0 + block_size;
+//
+//                for (int j0 = 0; j0 < M; j0 += block_size) {
+//                        int jmax = j0 + block_size > M ? M : j0 + block_size;
+//
+//                        for (int k0 = 0; k0 < K; k0 += block_size) {
+//                                int kmax = k0 + block_size > K ? K : k0 + block_size;
+//
+//                                for (int j1 = j0; j1 < jmax; ++j1) {
+//                                        int sj = M * j1;
+//
+//                                        for (int i1 = i0; i1 < imax; ++i1) {
+//                                                int mi = M * i1;
+//                                                int ki = K * i1;
+//                                                int kij = ki + j1;
+//
+//                                                for (int k1 = k0; k1 < kmax; ++k1) {
+//                                                        C[kij] += A[mi + k1] * B[sj + k1];
+//                                                }
+//                                        }
+//                                }
+//                        }
+//                }
+//        }
+//}
+
 
 /**
  *  Funcao prnMat:  Imprime o conteudo de uma matriz em stdout

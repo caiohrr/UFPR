@@ -27,7 +27,8 @@ void multMatVet(MatRow mat, Vetor v, int m, int n, Vetor res);
 void multMatMat(MatRow A, MatRow B, int n, MatRow C);
 
 void multMatVetV2(MatRow mat, Vetor v, int m, int n, Vetor res);
-void multMatMatV2(MatRow A, MatRow B, int n, MatRow C);
+void multMatMatV2(MatRow A, MatRow B, int n, MatRow C, int blocksize);
+void multMatMatV2_2(MatRow A , MatRow B, MatRow C, int N, int M, int K);
 
 void prnMat(MatRow mat, int m, int n);
 void prnVetor(Vetor vet, int n);
