@@ -95,7 +95,7 @@ int main (int argc, char *argv[]) {
 
         LIKWID_MARKER_START("tempoMatMatOtimizado");
         rtime_t tempoMatMatV2 = timestamp();
-        multMatMatV2(mRow_1, mRow_2, n, resMat2, 16);
+        multMatMatV2_2(mRow_1, mRow_2, resMat2, n, n, n);
         tempoMatMatV2 = timestamp() - tempoMatMatV2;
         LIKWID_MARKER_STOP("tempoMatMatOtimizado");
 

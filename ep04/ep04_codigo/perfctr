@@ -10,39 +10,27 @@
 #
 
 VALORES_TESTE=(64 100 128 200 256 512 600 900 1024 2000 2048 3000 4000);
-#VALORES_TESTE=(64 100 128 200)
+#VALORES_TESTE=(64 100 128 200 256 512 600 900 1024 2000 2048)
 METRICAS=("L3" "L2CACHE" "ENERGY" "FLOPS_DP")
 
 LIKWID_CMD="likwid-perfctr -C $1 -g $2 -m"
 shift 2
 
-echo "performance" > /sys/devices/system/cpu/cpufreq/policy${1}/scaling_governor
+echo "performance" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
 
 #make purge matmult
 for k in ${METRICAS[@]}
 do
-        > $k.log
+        > ./log/$k.log
         for n in ${VALORES_TESTE[@]}
         do
-                likwid-perfctr -C 3 -g $k -m ./matmult $n >> $k.log
+                likwid-perfctr -C 3 -g $k -m ./matmult $n >> ./log/$k.log
         done
 done
 
-grep "L3 bandwidth" L3.log > L3.dat
-grep "L2 miss ratio" L2CACHE.log > L2CACHE.dat
-grep "Energy \[J\]" ENERGY.log > ENERGY.dat
-grep "  DP MFLOP\/s" FLOPS_DP.log > FLOPS_DP.dat
+grep "L3 bandwidth" ./log/L3.log > ./dat/L3.dat
+grep "L2 miss ratio" ./log/L2CACHE.log > ./dat/L2CACHE.dat
+grep "Energy \[J\]" ./log/ENERGY.log > ./dat/ENERGY.dat
+grep "  DP MFLOP\/s" ./log/FLOPS_DP.log > ./dat/FLOPS_DP.dat
 
-#${LIKWID_CMD} $*
-
-echo "powersave" > /sys/devices/system/cpu/cpufreq/policy${1}/scaling_governor
-
-# Para obter topologia dos cpu's
-#      likwid-topology -c -g
-
-# Para obter lista de grupos de indicadores de performance:
-#      likwid-perfctr -a
-
-# Para obter lista de Eventos e Contadores
-#      likwid-perfctr -e
-
+echo "powersave" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
