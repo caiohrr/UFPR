@@ -4,11 +4,22 @@ GRR: 20224386
 Aluno: Frank Wolff Hannemann
 GRR: 20224758 
 
-Otimizações feitas:
-    Na função multMatVet, usamos a técnica de Loop Unroll & Jam para melhorar o desempenho.
-    o fator de unrolling que estamos usando é de 4. Estamos usando essa técnica pois isso permite
-    que seja feito somente N/4(fator de unrolling) carregamentos na memória do vetor que estamos multiplicando.
-    O nosso código para a multiplicação de vetor funciona para qualquer tamanho de vetor, porque o resíduo 
-    (caso N não seja divisível pelo fator de unrolling) é calculado no final da função.
+Otimizações
 
-    Na função multMatMat, usamos as técnicas 
+Na função multMatVetV@, implementamos a técnica de otimização loop unroll & jam para melhorar o desempenho. Os principais pontos dessa otimização são:
+
+- Utilizamos um fator de desdobramento de loop de 4, o que significa que apenas N/4 (onde N é o tamanho do vetor de entrada) carregamentos de memória são necessários para a multiplicação do vetor.
+- O código foi projetado para funcionar eficientemente para vetores de qualquer tamanho. Mesmo quando N não é divisível por 4, o código calcula o resto separadamente no final da função.
+
+Na função multMatMatV2, empregamos várias técnicas de otimização para aprimorar a multiplicação de matrizes. 
+
+- A multiplicação de matrizes é realizada em blocos, o que minimiza cache misses e melhora a localidade dos dados.
+- Para otimizar ainda mais o desempenho, utilizamos o loop unroll & jam. O código processa multiplicações de matrizes quatro elementos de cada vez.
+- O código foi projetado para funcionar somente com matrizes com ordem divisível por 4. 
+
+Errata
+
+- Não fizemos gráfico do FLOPS_AVX pois ele era sempre zero
+
+Uso
+
