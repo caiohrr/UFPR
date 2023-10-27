@@ -1,0 +1,39 @@
+Aluno: Caio Henrique Ramos Rufino
+GRR: 20224386
+
+Aluno: Frank Wolff Hannemann
+GRR: 20224758 
+
+Otimizações
+
+Na função multMatVet, implementamos a técnica de otimização loop unroll & jam para melhorar o desempenho. Os principais pontos dessa otimização são:
+
+- Utilizamos um fator de desdobramento de loop de 4, o que significa que apenas N/4 (onde N é o tamanho do vetor de entrada) carregamentos de memória são necessários para a multiplicação do vetor.
+- O código foi projetado para funcionar eficientemente para vetores de qualquer tamanho. Mesmo quando N não é divisível por 4, o código calcula o resto separadamente no final da função.
+
+Na função multMatMatV2, empregamos várias técnicas de otimização para aprimorar a multiplicação de matrizes. 
+
+- A multiplicação de matrizes é realizada em blocos, o que minimiza cache misses e melhora a localidade dos dados.
+- Para otimizar ainda mais o desempenho, utilizamos o loop unroll & jam. O código processa multiplicações de matrizes quatro elementos de cada vez.
+- O código foi projetado para funcionar somente com matrizes com ordem divisível por 4. 
+
+Para usar o script de plotar os gráficos:
+
+Uso
+
+- Forma de uso do perfctr:
+
+        ./perfctr
+
+        O perfctr já roda o matmult com o core 3 da CPU e realiza todos os casos de teste especificados, colocando o resultado no diretório log.
+
+- Forma de uso do script para plotar os gráficos (plotar.py):
+
+        python3 plotar.py <METRICA>
+
+        A metrica pode ser L2CACHE, L3, ENERGY ou FLOPS_DP. Caso nenhuma métrica seja selecionada o script plotará um gráfico para todas elas, basta ir fechando o plot que aparecerá o próximo.
+
+Informações Adicionais
+
+- Não fizemos gráfico do FLOPS_AVX pois ele era sempre zero
+- O arquivo com a arquitetura do processador está com o nome de topologiaProcessador
