@@ -1,0 +1,14 @@
+Aluno: Caio Henrique Ramos Rufino
+GRR: 20224386
+
+Aluno: Frank Wolff Hannemann
+GRR: 20224758 
+
+Otimizações feitas:
+    Na função multMatVet, usamos a técnica de Loop Unroll & Jam para melhorar o desempenho.
+    o fator de unrolling que estamos usando é de 4. Estamos usando essa técnica pois isso permite
+    que seja feito somente N/4(fator de unrolling) carregamentos na memória do vetor que estamos multiplicando.
+    O nosso código para a multiplicação de vetor funciona para qualquer tamanho de vetor, porque o resíduo 
+    (caso N não seja divisível pelo fator de unrolling) é calculado no final da função.
+
+    Na função multMatMat, usamos as técnicas 

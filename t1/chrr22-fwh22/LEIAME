@@ -1,0 +1,21 @@
+Caio Henrique Ramos Rufino (GRR20224386)
+Frank Wolff Hannemann (GRR20224758)
+
+O código fonte foi separado em 3 bibliotecas e 1 arquivo contendo a função main().
+
+libIntervalar contém a estrutura de números intervalares e suas operações básicas
+como multiplicação, subtração, etc.
+
+libSistemaIntervalar contém as funções específicas para a resolução de sistemas lineares
+utilizando números intervalares, ou seja, funções como a eliminação de Gauss e retrossubstituição.
+
+libAjustePolinomialIntervalar contém as funções referentes ao ajuste polinomial em si, então a função
+que utiliza o método dos mínimos quadrados para formar o sistema linear está nela.
+
+A função main() está contida no arquivo ajustePol.c.
+
+Todas as funções possuem comentários nos arquivos .h.
+
+Não ficou claro como o script deveria operar, então o fizemos de maneira que sejam gerados os arquivos
+ENERGY.log e FLOPS_DP.log e na saída stdout Energy[J] e o FLOPS AVX para a geração do sistema linear e
+sua resolução.
