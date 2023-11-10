@@ -24,12 +24,18 @@ void lerEntrada(double *vetorX, double *vetorY, long long nPontos) {
 
 void calcularResiduo(NumIntervalar *vetorR, NumIntervalar *vetorIntervalarCoef, NumIntervalar *vetorX, NumIntervalar *vetorY, long long grau, long long nPontos) {
 
+        // Gerar um vetor dos expoentes calculando seus valores apenas uma vez, ao inves de recalcular durante o loop
+        NumIntervalar vetorExp[grau];
+        for (long long j = 0; j < grau; j++) {
+                vetorExp[j] = expIntervalar(vetorX[j], j);
+        }
+
         for (long long i = 0; i < nPontos; i++) {
                 NumIntervalar tmp;
                 tmp.menor = 0;
                 tmp.maior = 0;
                 for (long long j = 0; j < grau; j++) {
-                       tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorIntervalarCoef[j], expIntervalar(vetorX[i], j)));  
+                       tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorIntervalarCoef[j], vetorExp[j]));  
                 }
                 vetorR[i] = subtracaoIntervalar(vetorY[i], tmp); 
         } 
@@ -70,15 +76,13 @@ void gerarVetorCoef(NumIntervalar *matriz, NumIntervalar *vetorX, long long grau
                         tmp = somaIntervalar(tmp, expIntervalar(vetorX[j], i));
                 }
                 vetorCoef[i] = tmp;
-                //printf("%lf ", tmp.menor); 
         }
-        //printf("\n");
         
 }
 
 void gerarSistemaIntervalar(NumIntervalar *matriz, NumIntervalar *vetorX, NumIntervalar *vetorY, NumIntervalar *vetorB, long long grau, long long nPontos) {
-
         NumIntervalar vetorCoef[grau * 2 - 1];
+
         gerarVetorCoef(matriz, vetorX, grau, nPontos, vetorCoef);
         for (long long i = 0; i < grau; i++) {
                 for (long long j = 0; j < grau; j++) {
