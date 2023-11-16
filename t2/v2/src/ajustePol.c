@@ -54,15 +54,15 @@ int main() {
         LIKWID_MARKER_CLOSE;
         tempoResolverSistema = timestamp() - tempoResolverSistema;
 
-        imprimirVetorIntervalar(vetorIntervalarCoef, grau);
+        //imprimirVetorIntervalar(vetorIntervalarCoef, grau);
 
         tempoCalcularResiduo = timestamp();
         calcularResiduo(vetorIntervalarR, vetorIntervalarCoef, vetorIntervalarX, vetorIntervalarY, grau, nPontos);
         tempoCalcularResiduo = timestamp() - tempoCalcularResiduo;
 
-        printf("\n");
+        //printf("\n");
         //imprimirVetorIntervalar(vetorIntervalarR, nPontos);
-        printf("\n");
+        //printf("\n");
         printf("%lf\n%lf\n%lf\n", tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo);
         //%1.8e
 
