@@ -1,48 +1,672 @@
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1014.790700
+TempoResolverSistema: 0.166389
+TempoCalularResiduo: 0.092158
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000096 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 251991 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    682 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |     98 |
++------------------------+---------+--------+
+
++---------------------+--------+
+|        Metric       | Core 3 |
++---------------------+--------+
+| Runtime (RDTSC) [s] | 0.0001 |
+|   L2 request rate   | 0.0027 |
+|     L2 miss rate    | 0.0004 |
+|    L2 miss ratio    | 0.1437 |
++---------------------+--------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9137 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    327 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 5.267761e-06 |
+|   L2 request rate   |       0.0358 |
+|     L2 miss rate    |       0.0003 |
+|    L2 miss ratio    |       0.0092 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000015 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |  27947 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    350 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      5 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 1.537216e-05 |
+|   L2 request rate   |       0.0125 |
+|     L2 miss rate    |       0.0002 |
+|    L2 miss ratio    |       0.0143 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1017.746886
+TempoResolverSistema: 0.165173
+TempoCalularResiduo: 0.107147
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000184 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 498200 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    924 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |     96 |
++------------------------+---------+--------+
+
++---------------------+--------+
+|        Metric       | Core 3 |
++---------------------+--------+
+| Runtime (RDTSC) [s] | 0.0002 |
+|   L2 request rate   | 0.0019 |
+|     L2 miss rate    | 0.0002 |
+|    L2 miss ratio    | 0.1039 |
++---------------------+--------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000006 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9077 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    311 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 5.782663e-06 |
+|   L2 request rate   |       0.0343 |
+|     L2 miss rate    |       0.0003 |
+|    L2 miss ratio    |       0.0096 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000029 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |  50091 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    401 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 2.931330e-05 |
+|   L2 request rate   |       0.0080 |
+|     L2 miss rate    |       0.0001 |
+|    L2 miss ratio    |       0.0075 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1017.886475
+TempoResolverSistema: 0.163908
+TempoCalularResiduo: 0.115314
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000252 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 775184 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    965 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |     89 |
++------------------------+---------+--------+
+
++---------------------+--------+
+|        Metric       | Core 3 |
++---------------------+--------+
+| Runtime (RDTSC) [s] | 0.0003 |
+|   L2 request rate   | 0.0012 |
+|     L2 miss rate    | 0.0001 |
+|    L2 miss ratio    | 0.0922 |
++---------------------+--------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9125 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    303 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 5.265195e-06 |
+|   L2 request rate   |       0.0332 |
+|     L2 miss rate    |       0.0003 |
+|    L2 miss ratio    |       0.0099 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000043 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |  75292 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    449 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 4.347921e-05 |
+|   L2 request rate   |       0.0060 |
+|     L2 miss rate    | 3.984487e-05 |
+|    L2 miss ratio    |       0.0067 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1017.645810
+TempoResolverSistema: 0.151694
+TempoCalularResiduo: 0.125062
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000317 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 990617 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |   1251 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |     99 |
++------------------------+---------+--------+
+
++---------------------+--------+
+|        Metric       | Core 3 |
++---------------------+--------+
+| Runtime (RDTSC) [s] | 0.0003 |
+|   L2 request rate   | 0.0013 |
+|     L2 miss rate    | 0.0001 |
+|    L2 miss ratio    | 0.0791 |
++---------------------+--------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9109 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    345 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 4.819781e-06 |
+|   L2 request rate   |       0.0379 |
+|     L2 miss rate    |       0.0003 |
+|    L2 miss ratio    |       0.0087 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000055 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |  94892 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    503 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      4 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0001 |
+|   L2 request rate   |       0.0053 |
+|     L2 miss rate    | 4.215318e-05 |
+|    L2 miss ratio    |       0.0080 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1018.300680
+TempoResolverSistema: 0.151056
+TempoCalularResiduo: 0.180539
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000597 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+---------+
+|          Event         | Counter |  Core 3 |
++------------------------+---------+---------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 1975450 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    2576 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      99 |
++------------------------+---------+---------+
+
++---------------------+--------+
+|        Metric       | Core 3 |
++---------------------+--------+
+| Runtime (RDTSC) [s] | 0.0006 |
+|   L2 request rate   | 0.0013 |
+|     L2 miss rate    | 0.0001 |
+|    L2 miss ratio    | 0.0384 |
++---------------------+--------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9079 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    310 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      2 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 5.165503e-06 |
+|   L2 request rate   |       0.0341 |
+|     L2 miss rate    |       0.0002 |
+|    L2 miss ratio    |       0.0065 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000110 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 182446 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    628 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      6 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0001 |
+|   L2 request rate   |       0.0034 |
+|     L2 miss rate    | 3.288644e-05 |
+|    L2 miss ratio    |       0.0096 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1018.262259
+TempoResolverSistema: 0.154051
+TempoCalularResiduo: 0.199598
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000690 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+---------+
+|          Event         | Counter |  Core 3 |
++------------------------+---------+---------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 2313985 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    3227 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      85 |
++------------------------+---------+---------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0007 |
+|   L2 request rate   |       0.0014 |
+|     L2 miss rate    | 3.673317e-05 |
+|    L2 miss ratio    |       0.0263 |
++---------------------+--------------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9161 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    328 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      2 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 4.944357e-06 |
+|   L2 request rate   |       0.0358 |
+|     L2 miss rate    |       0.0002 |
+|    L2 miss ratio    |       0.0061 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000127 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 212893 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    665 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      4 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0001 |
+|   L2 request rate   |       0.0031 |
+|     L2 miss rate    | 1.878878e-05 |
+|    L2 miss ratio    |       0.0060 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1015.731946
+TempoResolverSistema: 0.152876
+TempoCalularResiduo: 0.276973
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000912 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+---------+
+|          Event         | Counter |  Core 3 |
++------------------------+---------+---------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 3083385 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    4659 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      89 |
++------------------------+---------+---------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0009 |
+|   L2 request rate   |       0.0015 |
+|     L2 miss rate    | 2.886438e-05 |
+|    L2 miss ratio    |       0.0191 |
++---------------------+--------------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9153 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    330 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 4.808064e-06 |
+|   L2 request rate   |       0.0361 |
+|     L2 miss rate    |       0.0003 |
+|    L2 miss ratio    |       0.0091 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000190 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 278896 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    774 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      5 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0002 |
+|   L2 request rate   |       0.0028 |
+|     L2 miss rate    | 1.792783e-05 |
+|    L2 miss ratio    |       0.0065 |
++---------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1018.781040
+TempoResolverSistema: 0.153195
+TempoCalularResiduo: 0.289485
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.001158 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+---------+
+|          Event         | Counter |  Core 3 |
++------------------------+---------+---------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 3945114 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    6137 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |     103 |
++------------------------+---------+---------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0012 |
+|   L2 request rate   |       0.0016 |
+|     L2 miss rate    | 2.610824e-05 |
+|    L2 miss ratio    |       0.0168 |
++---------------------+--------------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  |   9109 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    320 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] | 4.945478e-06 |
+|   L2 request rate   |       0.0351 |
+|     L2 miss rate    |       0.0003 |
+|    L2 miss ratio    |       0.0094 |
++---------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000219 |
+|     call count    |        1 |
++-------------------+----------+
+
++------------------------+---------+--------+
+|          Event         | Counter | Core 3 |
++------------------------+---------+--------+
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 359600 |
+| REQUESTS_TO_L2_DC_FILL |   PMC1  |    899 |
+|  L2_CACHE_MISS_DC_FILL |   PMC2  |      3 |
++------------------------+---------+--------+
+
++---------------------+--------------+
+|        Metric       |    Core 3    |
++---------------------+--------------+
+| Runtime (RDTSC) [s] |       0.0002 |
+|   L2 request rate   |       0.0025 |
+|     L2 miss rate    | 8.342603e-06 |
+|    L2 miss ratio    |       0.0033 |
++---------------------+--------------+
+

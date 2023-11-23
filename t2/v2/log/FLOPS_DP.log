@@ -1,42 +1,744 @@
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1015.000032
+TempoResolverSistema: 0.198705
+TempoCalularResiduo: 0.109459
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000099 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 252525 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 351038 |
+|       RETIRED_UOPS       |   PMC2  | 268727 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  98056 |
++--------------------------+---------+--------+
+
++----------------------+----------+
+|        Metric        |  Core 3  |
++----------------------+----------+
+|  Runtime (RDTSC) [s] |   0.0001 |
+| Runtime unhalted [s] |   0.0001 |
+|      DP MFLOP/s      | 993.1542 |
+|          CPI         |   1.3901 |
+|  CPI (based on uops) |   1.3063 |
+|          IPC         |   0.7194 |
++----------------------+----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9669 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  43258 |
+|       RETIRED_UOPS       |   PMC2  |  12012 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 4.926639e-06 |
+| Runtime unhalted [s] | 1.235889e-05 |
+|      DP MFLOP/s      |     133.5596 |
+|          CPI         |       4.4739 |
+|  CPI (based on uops) |       3.6012 |
+|          IPC         |       0.2235 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000014 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |  28479 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  85140 |
+|       RETIRED_UOPS       |   PMC2  |  33458 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |   3827 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.406766e-05 |
+| Runtime unhalted [s] | 2.432464e-05 |
+|      DP MFLOP/s      |     272.0424 |
+|          CPI         |       2.9896 |
+|  CPI (based on uops) |       2.5447 |
+|          IPC         |       0.3345 |
++----------------------+--------------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+TempoGerarSistema: 1015.417405
+TempoResolverSistema: 0.196557
+TempoCalularResiduo: 0.121028
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000165 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 498732 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 625293 |
+|       RETIRED_UOPS       |   PMC2  | 527723 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  | 196104 |
++--------------------------+---------+--------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0002 |
+| Runtime unhalted [s] |    0.0002 |
+|      DP MFLOP/s      | 1189.8626 |
+|          CPI         |    1.2538 |
+|  CPI (based on uops) |    1.1849 |
+|          IPC         |    0.7976 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9609 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  44072 |
+|       RETIRED_UOPS       |   PMC2  |  12004 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 5.098620e-06 |
+| Runtime unhalted [s] | 1.259150e-05 |
+|      DP MFLOP/s      |     129.0545 |
+|          CPI         |       4.5865 |
+|  CPI (based on uops) |       3.6714 |
+|          IPC         |       0.2180 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000027 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |  50623 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 139341 |
+|       RETIRED_UOPS       |   PMC2  |  59041 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |   7155 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 2.725502e-05 |
+| Runtime unhalted [s] | 3.981013e-05 |
+|      DP MFLOP/s      |     262.5204 |
+|          CPI         |       2.7525 |
+|  CPI (based on uops) |       2.3601 |
+|          IPC         |       0.3633 |
++----------------------+--------------+
+
 --------------------------------------------------------------------------------
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1017.939764
+TempoResolverSistema: 0.219051
+TempoCalularResiduo: 0.150852
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000252 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 775716 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 933239 |
+|       RETIRED_UOPS       |   PMC2  | 819181 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  | 306408 |
++--------------------------+---------+--------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0003 |
+| Runtime unhalted [s] |    0.0003 |
+|      DP MFLOP/s      | 1218.0760 |
+|          CPI         |    1.2031 |
+|  CPI (based on uops) |    1.1392 |
+|          IPC         |    0.8312 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9657 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  42902 |
+|       RETIRED_UOPS       |   PMC2  |  12044 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 5.395468e-06 |
+| Runtime unhalted [s] | 1.225830e-05 |
+|      DP MFLOP/s      |     121.9542 |
+|          CPI         |       4.4426 |
+|  CPI (based on uops) |       3.5621 |
+|          IPC         |       0.2251 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000047 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |  75824 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 199743 |
+|       RETIRED_UOPS       |   PMC2  |  88286 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  10899 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 4.700300e-05 |
+| Runtime unhalted [s] |       0.0001 |
+|      DP MFLOP/s      |     231.8788 |
+|          CPI         |       2.6343 |
+|  CPI (based on uops) |       2.2625 |
+|          IPC         |       0.3796 |
++----------------------+--------------+
+
 --------------------------------------------------------------------------------
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1017.759874
+TempoResolverSistema: 0.198176
+TempoCalularResiduo: 0.147850
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000294 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+---------+
+|           Event          | Counter |  Core 3 |
++--------------------------+---------+---------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |  991148 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 1179100 |
+|       RETIRED_UOPS       |   PMC2  | 1045821 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  392200 |
++--------------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0003 |
+| Runtime unhalted [s] |    0.0003 |
+|      DP MFLOP/s      | 1335.7601 |
+|          CPI         |    1.1896 |
+|  CPI (based on uops) |    1.1274 |
+|          IPC         |    0.8406 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9641 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  42322 |
+|       RETIRED_UOPS       |   PMC2  |  11987 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 4.961486e-06 |
+| Runtime unhalted [s] | 1.209146e-05 |
+|      DP MFLOP/s      |     132.6216 |
+|          CPI         |       4.3898 |
+|  CPI (based on uops) |       3.5307 |
+|          IPC         |       0.2278 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000055 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |  95424 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 247150 |
+|       RETIRED_UOPS       |   PMC2  | 110816 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  13811 |
++--------------------------+---------+--------+
+
++----------------------+----------+
+|        Metric        |  Core 3  |
++----------------------+----------+
+|  Runtime (RDTSC) [s] |   0.0001 |
+| Runtime unhalted [s] |   0.0001 |
+|      DP MFLOP/s      | 251.5951 |
+|          CPI         |   2.5900 |
+|  CPI (based on uops) |   2.2303 |
+|          IPC         |   0.3861 |
++----------------------+----------+
+
 --------------------------------------------------------------------------------
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1031.347386
+TempoResolverSistema: 0.230666
+TempoCalularResiduo: 0.218877
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000610 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+---------+
+|           Event          | Counter |  Core 3 |
++--------------------------+---------+---------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 1975981 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 2310862 |
+|       RETIRED_UOPS       |   PMC2  | 2083224 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  784392 |
++--------------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0006 |
+| Runtime unhalted [s] |    0.0007 |
+|      DP MFLOP/s      | 1285.5591 |
+|          CPI         |    1.1695 |
+|  CPI (based on uops) |    1.1093 |
+|          IPC         |    0.8551 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9612 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  52755 |
+|       RETIRED_UOPS       |   PMC2  |  12202 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 5.371762e-06 |
+| Runtime unhalted [s] | 1.507223e-05 |
+|      DP MFLOP/s      |     122.4924 |
+|          CPI         |       5.4885 |
+|  CPI (based on uops) |       4.3235 |
+|          IPC         |       0.1822 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000119 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 182978 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 465002 |
+|       RETIRED_UOPS       |   PMC2  | 212394 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  27123 |
++--------------------------+---------+--------+
+
++----------------------+----------+
+|        Metric        |  Core 3  |
++----------------------+----------+
+|  Runtime (RDTSC) [s] |   0.0001 |
+| Runtime unhalted [s] |   0.0001 |
+|      DP MFLOP/s      | 227.2584 |
+|          CPI         |   2.5413 |
+|  CPI (based on uops) |   2.1893 |
+|          IPC         |   0.3935 |
++----------------------+----------+
+
 --------------------------------------------------------------------------------
-CPU name:	Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
-CPU type:	Intel Core Westmere processor
-CPU clock:	3.19 GHz
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
 --------------------------------------------------------------------------------
+TempoGerarSistema: 1018.055606
+TempoResolverSistema: 0.198146
+TempoCalularResiduo: 0.219595
 --------------------------------------------------------------------------------
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000660 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+---------+
+|           Event          | Counter |  Core 3 |
++--------------------------+---------+---------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 2314516 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 2678907 |
+|       RETIRED_UOPS       |   PMC2  | 2438375 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  919208 |
++--------------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0007 |
+| Runtime unhalted [s] |    0.0008 |
+|      DP MFLOP/s      | 1393.5736 |
+|          CPI         |    1.1574 |
+|  CPI (based on uops) |    1.0986 |
+|          IPC         |    0.8640 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9693 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  42759 |
+|       RETIRED_UOPS       |   PMC2  |  12078 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 4.980105e-06 |
+| Runtime unhalted [s] | 1.221633e-05 |
+|      DP MFLOP/s      |     132.1257 |
+|          CPI         |       4.4113 |
+|  CPI (based on uops) |       3.5402 |
+|          IPC         |       0.2267 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000127 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 213425 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 535462 |
+|       RETIRED_UOPS       |   PMC2  | 247313 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  31699 |
++--------------------------+---------+--------+
+
++----------------------+----------+
+|        Metric        |  Core 3  |
++----------------------+----------+
+|  Runtime (RDTSC) [s] |   0.0001 |
+| Runtime unhalted [s] |   0.0002 |
+|      DP MFLOP/s      | 249.2565 |
+|          CPI         |   2.5089 |
+|  CPI (based on uops) |   2.1651 |
+|          IPC         |   0.3986 |
++----------------------+----------+
+
+--------------------------------------------------------------------------------
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 1018.399261
+TempoResolverSistema: 0.197055
+TempoCalularResiduo: 0.266029
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000905 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+---------+
+|           Event          | Counter |  Core 3 |
++--------------------------+---------+---------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 3083918 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 3559649 |
+|       RETIRED_UOPS       |   PMC2  | 3248327 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  | 1225608 |
++--------------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0009 |
+| Runtime unhalted [s] |    0.0010 |
+|      DP MFLOP/s      | 1354.4917 |
+|          CPI         |    1.1543 |
+|  CPI (based on uops) |    1.0958 |
+|          IPC         |    0.8664 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9685 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  44316 |
+|       RETIRED_UOPS       |   PMC2  |  12075 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 4.896070e-06 |
+| Runtime unhalted [s] | 1.266113e-05 |
+|      DP MFLOP/s      |     134.3935 |
+|          CPI         |       4.5757 |
+|  CPI (based on uops) |       3.6701 |
+|          IPC         |       0.2185 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000170 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 279427 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 704839 |
+|       RETIRED_UOPS       |   PMC2  | 324386 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  42099 |
++--------------------------+---------+--------+
+
++----------------------+----------+
+|        Metric        |  Core 3  |
++----------------------+----------+
+|  Runtime (RDTSC) [s] |   0.0002 |
+| Runtime unhalted [s] |   0.0002 |
+|      DP MFLOP/s      | 247.2714 |
+|          CPI         |   2.5224 |
+|  CPI (based on uops) |   2.1728 |
+|          IPC         |   0.3964 |
++----------------------+----------+
+
+--------------------------------------------------------------------------------
+CPU name:	AMD FX(tm)-6300 Six-Core Processor
+CPU type:	AMD Interlagos processor
+CPU clock:	3.50 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 1016.057366
+TempoResolverSistema: 0.201978
+TempoCalularResiduo: 0.314097
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.001152 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+---------+
+|           Event          | Counter |  Core 3 |
++--------------------------+---------+---------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 3945645 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 4538097 |
+|       RETIRED_UOPS       |   PMC2  | 4154809 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  | 1568776 |
++--------------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0012 |
+| Runtime unhalted [s] |    0.0013 |
+|      DP MFLOP/s      | 1361.5507 |
+|          CPI         |    1.1502 |
+|  CPI (based on uops) |    1.0923 |
+|          IPC         |    0.8694 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000005 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  |   9641 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  |  47477 |
+|       RETIRED_UOPS       |   PMC2  |  11994 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |    658 |
++--------------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 5.241612e-06 |
+| Runtime unhalted [s] | 1.356424e-05 |
+|      DP MFLOP/s      |     125.5339 |
+|          CPI         |       4.9245 |
+|  CPI (based on uops) |       3.9584 |
+|          IPC         |       0.2031 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: FLOPS_DP
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000218 |
+|     call count    |        1 |
++-------------------+----------+
+
++--------------------------+---------+--------+
+|           Event          | Counter | Core 3 |
++--------------------------+---------+--------+
+|   RETIRED_INSTRUCTIONS   |   PMC0  | 360132 |
+|    CPU_CLOCKS_UNHALTED   |   PMC1  | 897094 |
+|       RETIRED_UOPS       |   PMC2  | 417147 |
+| RETIRED_FLOPS_DOUBLE_ALL |   PMC3  |  53747 |
++--------------------------+---------+--------+
+
++----------------------+----------+
+|        Metric        |  Core 3  |
++----------------------+----------+
+|  Runtime (RDTSC) [s] |   0.0002 |
+| Runtime unhalted [s] |   0.0003 |
+|      DP MFLOP/s      | 246.5188 |
+|          CPI         |   2.4910 |
+|  CPI (based on uops) |   2.1505 |
+|          IPC         |   0.4014 |
++----------------------+----------+
+

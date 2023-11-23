@@ -6,9 +6,6 @@ LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm
 
 OBJ = ajustePol.o libIntervalar.o libSistemaIntervalar.o libAjustePolinomialIntervalar.o utils.o
 
-SRC_DIR = src
-INC_DIR = include
-
 all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o ajustePol $(LFLAGS)
 
