@@ -8,6 +8,7 @@
 
 int main() {
 
+
         long long grau, nPontos;
         double *vetorX, *vetorY, tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo;
 
@@ -31,13 +32,6 @@ int main() {
                 vetorIntervalarY[i] = doubleToNumIntervalar(vetorY[i]);
         }
 
-        //tempoGerarSistema = timestamp();
-        //LIKWID_MARKER_INIT;
-        //LIKWID_MARKER_START("GerarSistema");
-        //gerarSistemaIntervalar(matrizIntervalar, vetorIntervalarX, vetorIntervalarY, vetorIntervalarB, grau, nPontos);
-        //LIKWID_MARKER_STOP("GerarSistema");
-        //tempoGerarSistema = timestamp() - tempoGerarSistema;
-
 
         tempoGerarSistema = timestamp();
         LIKWID_MARKER_INIT;
@@ -51,19 +45,21 @@ int main() {
         eliminacaoGauss(matrizIntervalar, vetorIntervalarB, grau);
         retrossubsIntervalar(matrizIntervalar, vetorIntervalarB, vetorIntervalarCoef, grau);
         LIKWID_MARKER_STOP("ResolverSistema");
-        LIKWID_MARKER_CLOSE;
         tempoResolverSistema = timestamp() - tempoResolverSistema;
 
         //imprimirVetorIntervalar(vetorIntervalarCoef, grau);
-
+        
+        LIKWID_MARKER_START("CalcularResiduo");
         tempoCalcularResiduo = timestamp();
         calcularResiduo(vetorIntervalarR, vetorIntervalarCoef, vetorIntervalarX, vetorIntervalarY, grau, nPontos);
+        LIKWID_MARKER_STOP("CalcularResiduo");
         tempoCalcularResiduo = timestamp() - tempoCalcularResiduo;
+
 
         //printf("\n");
         //imprimirVetorIntervalar(vetorIntervalarR, nPontos);
         //printf("\n");
-        printf("%lf\n%lf\n%lf\n", tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo);
+        printf("TempoGerarSistema: %lf\nTempoResolverSistema: %lf\nTempoCalularResiduo: %lf\n", tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo);
         //%1.8e
 
         free(vetorX);
@@ -74,6 +70,8 @@ int main() {
         free(vetorIntervalarR);
         free(vetorIntervalarCoef);
         destruirMatrizIntervalar(matrizIntervalar);
+
+        LIKWID_MARKER_CLOSE;
 
         return 0;
 }

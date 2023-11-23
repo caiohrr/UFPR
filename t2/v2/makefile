@@ -13,7 +13,7 @@ all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o ajustePol $(LFLAGS)
 
 ajustePol.o: src/ajustePol.c
-	$(CC) $(CFLAGS) -c src/ajustePol.c
+	$(CC) $(CFLAGS) -c src/ajustePol.c $(LFLAGS)
 
 libIntervalar.o: src/libIntervalar.c
 	$(CC) $(CFLAGS) -c src/libIntervalar.c

@@ -41,32 +41,7 @@ void calcularResiduo(NumIntervalar *vetorR, NumIntervalar *vetorIntervalarCoef, 
         } 
 }
 
-
-//void gerarSistemaIntervalar(NumIntervalar *matriz, NumIntervalar *vetorX, NumIntervalar *vetorY, NumIntervalar *vetorB, long long grau, long long nPontos) {
-//
-//        for (long long i = 0; i < grau; i++) {
-//                NumIntervalar tmp;
-//                for (long long j = 0; j < grau; j++) {
-//                        tmp.menor = 0;
-//                        tmp.maior = 0;
-//                        for (long long l = 0; l < nPontos; l++) {
-//                                tmp = somaIntervalar(tmp, expIntervalar(vetorX[l], i + j));
-//                        }
-//                        matriz[i][j] = tmp;
-//                }
-//
-//                NumIntervalar tmpX;
-//                tmp.menor = 0;
-//                tmp.maior = 0;
-//                for (long long m = 0; m < nPontos; m++) {
-//                        tmpX = expIntervalar(vetorX[m], i);
-//                        tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorY[m], tmpX)); 
-//                }
-//                vetorB[i] = tmp;
-//        }
-//}
-
-void gerarVetorCoef(NumIntervalar *matriz, NumIntervalar *vetorX, long long grau, long long nPontos, NumIntervalar *vetorCoef) {
+void gerarVetorCoef(NumIntervalar *vetorX, long long grau, long long nPontos, NumIntervalar *vetorCoef) {
 
         for(long long i = 0; i < grau * 2 - 1; i++) {
                 NumIntervalar tmp;
@@ -83,7 +58,7 @@ void gerarVetorCoef(NumIntervalar *matriz, NumIntervalar *vetorX, long long grau
 void gerarSistemaIntervalar(NumIntervalar *matriz, NumIntervalar *vetorX, NumIntervalar *vetorY, NumIntervalar *vetorB, long long grau, long long nPontos) {
         NumIntervalar vetorCoef[grau * 2 - 1];
 
-        gerarVetorCoef(matriz, vetorX, grau, nPontos, vetorCoef);
+        gerarVetorCoef(vetorX, grau, nPontos, vetorCoef);
         for (long long i = 0; i < grau; i++) {
                 for (long long j = 0; j < grau; j++) {
                         matriz[i * grau + j].menor = vetorCoef[i + j].menor;
