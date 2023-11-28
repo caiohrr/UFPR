@@ -73,26 +73,26 @@ def plotarGrafico(opcao, flops, l2cache, l3, tempo):
 
     xlabel = "Entrada"
 
-    FlopsGraph.plot(x_values, flops, label = "v1")
+    FlopsGraph.plot(x_values, flops, label = "v2")
     FlopsGraph.set_xlabel(xlabel)
     FlopsGraph.set_ylabel("MFLOPS/s")
     FlopsGraph.legend(shadow = True, fancybox = True)
 
-    L2cacheGraph.plot(x_values, l2cache, label = "v1")
+    L2cacheGraph.plot(x_values, l2cache, label = "v2")
     L2cacheGraph.set_xlabel(xlabel)
     L2cacheGraph.set_ylabel("L2 miss ratio")
-    L2cacheGraph.legend(shadow = True)
+    L2cacheGraph.legend(shadow = True, fancybox = True)
 
-    L3Graph.plot(x_values, l3, label = "v1")
+    L3Graph.plot(x_values, l3, label = "v2")
     L3Graph.set_xlabel(xlabel)
     L3Graph.set_ylabel("L3 bandwidth [MBytes/s]")
-    L3Graph.legend(fancybox = True)
+    L3Graph.legend(shadow = True, fancybox = True)
 
-    TempoGraph.plot(x_values, tempo, label = "v1")
+    TempoGraph.plot(x_values, tempo, label = "v2")
     TempoGraph.set_xlabel(xlabel)
     TempoGraph.set_ylabel("Tempo (ms)")
     TempoGraph.set_xscale("log", base = 2)
-    TempoGraph.legend()
+    TempoGraph.legend(shadow = True, fancybox = True)
 
     plt.tight_layout()
     plt.show()
