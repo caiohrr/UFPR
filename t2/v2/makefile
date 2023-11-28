@@ -28,4 +28,4 @@ clean:
 	-rm -f *.o
 
 purge: clean
-	-rm -f ajustePol FLOPS_DP.log ENERGY.log
+	-rm -f ajustePol
