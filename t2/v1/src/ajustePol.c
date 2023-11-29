@@ -9,6 +9,7 @@
 
 int main() {
 
+        LIKWID_MARKER_INIT;
         long long grau, nPontos;
         double *vetorX, *vetorY, tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo;
 
@@ -33,7 +34,6 @@ int main() {
         }
 
         tempoGerarSistema = timestamp();
-        LIKWID_MARKER_INIT;
         LIKWID_MARKER_START("GerarSistema");
         gerarSistemaIntervalar(matrizIntervalar, vetorIntervalarX, vetorIntervalarY, vetorIntervalarB, grau, nPontos);
         LIKWID_MARKER_STOP("GerarSistema");

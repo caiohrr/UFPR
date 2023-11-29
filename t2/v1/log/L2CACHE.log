@@ -1,0 +1,1881 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 0.271252
+TempoResolverSistema: 0.173806
+TempoCalularResiduo: 0.097530
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000086 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 567419 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 301452 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 271078 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   3978 |
+|     L2_RQSTS_MISS     |   PMC1  |   1339 |
++-----------------------+---------+--------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0001 |
+| Runtime unhalted [s] |    0.0001 |
+|      Clock [MHz]     | 3789.8276 |
+|          CPI         |    0.5313 |
+|    L2 request rate   |    0.0070 |
+|     L2 miss rate     |    0.0024 |
+|     L2 miss ratio    |    0.3366 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8634 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14374 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  12638 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1688 |
+|     L2_RQSTS_MISS     |   PMC1  |    510 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.555179e-06 |
+| Runtime unhalted [s] | 4.217762e-06 |
+|      Clock [MHz]     |    3876.0989 |
+|          CPI         |       1.6648 |
+|    L2 request rate   |       0.1955 |
+|     L2 miss rate     |       0.0591 |
+|     L2 miss ratio    |       0.3021 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000013 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |  97583 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  58130 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  51972 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   2466 |
+|     L2_RQSTS_MISS     |   PMC1  |    747 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.305705e-05 |
+| Runtime unhalted [s] | 1.705708e-05 |
+|      Clock [MHz]     |    3811.7679 |
+|          CPI         |       0.5957 |
+|    L2 request rate   |       0.0253 |
+|     L2 miss rate     |       0.0077 |
+|     L2 miss ratio    |       0.3029 |
++----------------------+--------------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 0.344556
+TempoResolverSistema: 0.175080
+TempoCalularResiduo: 0.110822
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000159 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1129275 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  576698 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  518584 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    4220 |
+|     L2_RQSTS_MISS     |   PMC1  |    1403 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0002 |
+| Runtime unhalted [s] |    0.0002 |
+|      Clock [MHz]     | 3789.8491 |
+|          CPI         |    0.5107 |
+|    L2 request rate   |    0.0037 |
+|     L2 miss rate     |    0.0012 |
+|     L2 miss ratio    |    0.3325 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8574 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14964 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  12922 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1761 |
+|     L2_RQSTS_MISS     |   PMC1  |    506 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.661395e-06 |
+| Runtime unhalted [s] | 4.390916e-06 |
+|      Clock [MHz]     |    3946.4858 |
+|          CPI         |       1.7453 |
+|    L2 request rate   |       0.2054 |
+|     L2 miss rate     |       0.0590 |
+|     L2 miss ratio    |       0.2873 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000026 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 191455 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 107861 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  96986 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   2723 |
+|     L2_RQSTS_MISS     |   PMC1  |    788 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 2.619500e-05 |
+| Runtime unhalted [s] | 3.164986e-05 |
+|      Clock [MHz]     |    3790.0765 |
+|          CPI         |       0.5634 |
+|    L2 request rate   |       0.0142 |
+|     L2 miss rate     |       0.0041 |
+|     L2 miss ratio    |       0.2894 |
++----------------------+--------------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 0.426175
+TempoResolverSistema: 0.174159
+TempoCalularResiduo: 0.124361
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000238 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1761363 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  884195 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  794774 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    4401 |
+|     L2_RQSTS_MISS     |   PMC1  |    1456 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0002 |
+| Runtime unhalted [s] |    0.0003 |
+|      Clock [MHz]     | 3791.3752 |
+|          CPI         |    0.5020 |
+|    L2 request rate   |    0.0025 |
+|     L2 miss rate     |    0.0008 |
+|     L2 miss ratio    |    0.3308 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8622 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14916 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13206 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1560 |
+|     L2_RQSTS_MISS     |   PMC1  |    429 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.549906e-06 |
+| Runtime unhalted [s] | 4.376833e-06 |
+|      Clock [MHz]     |    3849.2263 |
+|          CPI         |       1.7300 |
+|    L2 request rate   |       0.1809 |
+|     L2 miss rate     |       0.0498 |
+|     L2 miss ratio    |       0.2750 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000040 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 297051 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 159018 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 142852 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   2707 |
+|     L2_RQSTS_MISS     |   PMC1  |    733 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 3.961797e-05 |
+| Runtime unhalted [s] | 4.666099e-05 |
+|      Clock [MHz]     |    3793.6069 |
+|          CPI         |       0.5353 |
+|    L2 request rate   |       0.0091 |
+|     L2 miss rate     |       0.0025 |
+|     L2 miss ratio    |       0.2708 |
++----------------------+--------------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 0.492399
+TempoResolverSistema: 0.173058
+TempoCalularResiduo: 0.135344
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000305 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 2252988 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 1123977 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1010614 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    4418 |
+|     L2_RQSTS_MISS     |   PMC1  |    1454 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0003 |
+| Runtime unhalted [s] |    0.0003 |
+|      Clock [MHz]     | 3788.1893 |
+|          CPI         |    0.4989 |
+|    L2 request rate   |    0.0020 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.3291 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8606 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15366 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13348 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1643 |
+|     L2_RQSTS_MISS     |   PMC1  |    496 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.682552e-06 |
+| Runtime unhalted [s] | 4.511295e-06 |
+|      Clock [MHz]     |    3921.0663 |
+|          CPI         |       1.7855 |
+|    L2 request rate   |       0.1909 |
+|     L2 miss rate     |       0.0576 |
+|     L2 miss ratio    |       0.3019 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000051 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 379195 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 201542 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 181050 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   2881 |
+|     L2_RQSTS_MISS     |   PMC1  |    862 |
++-----------------------+---------+--------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0001 |
+| Runtime unhalted [s] |    0.0001 |
+|      Clock [MHz]     | 3791.6356 |
+|          CPI         |    0.5315 |
+|    L2 request rate   |    0.0076 |
+|     L2 miss rate     |    0.0023 |
+|     L2 miss ratio    |    0.2992 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 0.781814
+TempoResolverSistema: 0.175065
+TempoCalularResiduo: 0.187335
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000592 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 4500411 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 2219326 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1994674 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    5165 |
+|     L2_RQSTS_MISS     |   PMC1  |    1693 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0006 |
+| Runtime unhalted [s] |    0.0007 |
+|      Clock [MHz]     | 3791.7896 |
+|          CPI         |    0.4931 |
+|    L2 request rate   |    0.0011 |
+|     L2 miss rate     |    0.0004 |
+|     L2 miss ratio    |    0.3278 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8576 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15197 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  14058 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1665 |
+|     L2_RQSTS_MISS     |   PMC1  |    515 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.749426e-06 |
+| Runtime unhalted [s] | 4.459260e-06 |
+|      Clock [MHz]     |    3684.0827 |
+|          CPI         |       1.7720 |
+|    L2 request rate   |       0.1941 |
+|     L2 miss rate     |       0.0601 |
+|     L2 miss ratio    |       0.3093 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000102 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 754504 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 391039 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 351024 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   3716 |
+|     L2_RQSTS_MISS     |   PMC1  |   1142 |
++-----------------------+---------+--------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0001 |
+| Runtime unhalted [s] |    0.0001 |
+|      Clock [MHz]     | 3796.4555 |
+|          CPI         |    0.5183 |
+|    L2 request rate   |    0.0049 |
+|     L2 miss rate     |    0.0015 |
+|     L2 miss ratio    |    0.3073 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 0.877008
+TempoResolverSistema: 0.169790
+TempoCalularResiduo: 0.203373
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000692 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 5272963 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 2597968 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 2335616 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    5703 |
+|     L2_RQSTS_MISS     |   PMC1  |    1728 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0007 |
+| Runtime unhalted [s] |    0.0008 |
+|      Clock [MHz]     | 3790.7817 |
+|          CPI         |    0.4927 |
+|    L2 request rate   |    0.0011 |
+|     L2 miss rate     |    0.0003 |
+|     L2 miss ratio    |    0.3030 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8658 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14595 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  12922 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1831 |
+|     L2_RQSTS_MISS     |   PMC1  |    522 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.590390e-06 |
+| Runtime unhalted [s] | 4.282602e-06 |
+|      Clock [MHz]     |    3849.2027 |
+|          CPI         |       1.6857 |
+|    L2 request rate   |       0.2115 |
+|     L2 miss rate     |       0.0603 |
+|     L2 miss ratio    |       0.2851 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000120 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 883660 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 458216 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 411800 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   3973 |
+|     L2_RQSTS_MISS     |   PMC1  |   1206 |
++-----------------------+---------+--------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0001 |
+| Runtime unhalted [s] |    0.0001 |
+|      Clock [MHz]     | 3792.1048 |
+|          CPI         |    0.5185 |
+|    L2 request rate   |    0.0045 |
+|     L2 miss rate     |    0.0014 |
+|     L2 miss ratio    |    0.3035 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 1.108965
+TempoResolverSistema: 0.176652
+TempoCalularResiduo: 0.261266
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000920 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 7028764 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 3455567 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 3106250 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    6883 |
+|     L2_RQSTS_MISS     |   PMC1  |    1870 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0009 |
+| Runtime unhalted [s] |    0.0010 |
+|      Clock [MHz]     | 3791.2218 |
+|          CPI         |    0.4916 |
+|    L2 request rate   |    0.0010 |
+|     L2 miss rate     |    0.0003 |
+|     L2 miss ratio    |    0.2717 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8650 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15845 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  14342 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1785 |
+|     L2_RQSTS_MISS     |   PMC1  |    536 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.811634e-06 |
+| Runtime unhalted [s] | 4.649390e-06 |
+|      Clock [MHz]     |    3765.1199 |
+|          CPI         |       1.8318 |
+|    L2 request rate   |       0.2064 |
+|     L2 miss rate     |       0.0620 |
+|     L2 miss ratio    |       0.3003 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000174 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1176821 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  609394 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  548688 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    5176 |
+|     L2_RQSTS_MISS     |   PMC1  |    1739 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0002 |
+| Runtime unhalted [s] |    0.0002 |
+|      Clock [MHz]     | 3785.0271 |
+|          CPI         |    0.5178 |
+|    L2 request rate   |    0.0044 |
+|     L2 miss rate     |    0.0015 |
+|     L2 miss ratio    |    0.3360 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 1.421020
+TempoResolverSistema: 0.175063
+TempoCalularResiduo: 0.290829
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.001231 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 8995260 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 4420662 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 3978414 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   11777 |
+|     L2_RQSTS_MISS     |   PMC1  |    2368 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0012 |
+| Runtime unhalted [s] |    0.0013 |
+|      Clock [MHz]     | 3786.8139 |
+|          CPI         |    0.4914 |
+|    L2 request rate   |    0.0013 |
+|     L2 miss rate     |    0.0003 |
+|     L2 miss ratio    |    0.2011 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8606 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14899 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13348 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1629 |
+|     L2_RQSTS_MISS     |   PMC1  |    458 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.632642e-06 |
+| Runtime unhalted [s] | 4.371802e-06 |
+|      Clock [MHz]     |    3803.9740 |
+|          CPI         |       1.7312 |
+|    L2 request rate   |       0.1893 |
+|     L2 miss rate     |       0.0532 |
+|     L2 miss ratio    |       0.2812 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000206 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1505474 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  779682 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  701054 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    4655 |
+|     L2_RQSTS_MISS     |   PMC1  |    1391 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0002 |
+| Runtime unhalted [s] |    0.0002 |
+|      Clock [MHz]     | 3790.2046 |
+|          CPI         |    0.5179 |
+|    L2 request rate   |    0.0031 |
+|     L2 miss rate     |    0.0009 |
+|     L2 miss ratio    |    0.2988 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 3.008494
+TempoResolverSistema: 0.194999
+TempoCalularResiduo: 0.497386
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.002789 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 17563580 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  8685298 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  8114022 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    68681 |
+|     L2_RQSTS_MISS     |   PMC1  |     6933 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0028 |
+| Runtime unhalted [s] |    0.0025 |
+|      Clock [MHz]     | 3647.9158 |
+|          CPI         |    0.4945 |
+|    L2 request rate   |    0.0039 |
+|     L2 miss rate     |    0.0004 |
+|     L2 miss ratio    |    0.1009 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8634 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  16557 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  15336 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   2081 |
+|     L2_RQSTS_MISS     |   PMC1  |    709 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.591562e-06 |
+| Runtime unhalted [s] | 4.858312e-06 |
+|      Clock [MHz]     |    3679.3052 |
+|          CPI         |       1.9177 |
+|    L2 request rate   |       0.2410 |
+|     L2 miss rate     |       0.0821 |
+|     L2 miss ratio    |       0.3407 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000409 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 2936069 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 1496490 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 1381660 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    7216 |
+|     L2_RQSTS_MISS     |   PMC1  |    2361 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0004 |
+| Runtime unhalted [s] |    0.0004 |
+|      Clock [MHz]     | 3691.2112 |
+|          CPI         |    0.5097 |
+|    L2 request rate   |    0.0025 |
+|     L2 miss rate     |    0.0008 |
+|     L2 miss ratio    |    0.3272 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 3.699335
+TempoResolverSistema: 0.250473
+TempoCalularResiduo: 0.705595
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.003496 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 26342560 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 12878220 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 11888950 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    60945 |
+|     L2_RQSTS_MISS     |   PMC1  |     6672 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0035 |
+| Runtime unhalted [s] |    0.0038 |
+|      Clock [MHz]     | 3691.5319 |
+|          CPI         |    0.4889 |
+|    L2 request rate   |    0.0023 |
+|     L2 miss rate     |    0.0003 |
+|     L2 miss ratio    |    0.1095 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8706 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14663 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13916 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1618 |
+|     L2_RQSTS_MISS     |   PMC1  |    468 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.616796e-06 |
+| Runtime unhalted [s] | 4.302576e-06 |
+|      Clock [MHz]     |    3590.8950 |
+|          CPI         |       1.6842 |
+|    L2 request rate   |       0.1858 |
+|     L2 miss rate     |       0.0538 |
+|     L2 miss ratio    |       0.2892 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000616 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 4402806 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 2241946 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 2069508 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    9458 |
+|     L2_RQSTS_MISS     |   PMC1  |    3269 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0006 |
+| Runtime unhalted [s] |    0.0007 |
+|      Clock [MHz]     | 3691.9204 |
+|          CPI         |    0.5092 |
+|    L2 request rate   |    0.0021 |
+|     L2 miss rate     |    0.0007 |
+|     L2 miss ratio    |    0.3456 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 4.946585
+TempoResolverSistema: 0.161248
+TempoCalularResiduo: 0.895200
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.004757 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 35964350 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 17577000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 16029100 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    72906 |
+|     L2_RQSTS_MISS     |   PMC1  |     7020 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0048 |
+| Runtime unhalted [s] |    0.0052 |
+|      Clock [MHz]     | 3737.0795 |
+|          CPI         |    0.4887 |
+|    L2 request rate   |    0.0020 |
+|     L2 miss rate     |    0.0002 |
+|     L2 miss ratio    |    0.0963 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8622 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15951 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  14342 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1607 |
+|     L2_RQSTS_MISS     |   PMC1  |    552 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.698371e-06 |
+| Runtime unhalted [s] | 4.680489e-06 |
+|      Clock [MHz]     |    3790.3116 |
+|          CPI         |       1.8500 |
+|    L2 request rate   |       0.1864 |
+|     L2 miss rate     |       0.0640 |
+|     L2 miss ratio    |       0.3435 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000816 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 6008874 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 3050808 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 2741594 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   11448 |
+|     L2_RQSTS_MISS     |   PMC1  |    3798 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0008 |
+| Runtime unhalted [s] |    0.0009 |
+|      Clock [MHz]     | 3792.3504 |
+|          CPI         |    0.5077 |
+|    L2 request rate   |    0.0019 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.3318 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 7.276122
+TempoResolverSistema: 0.165746
+TempoCalularResiduo: 1.319158
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.007079 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 52679560 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 25731710 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 23757450 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   117958 |
+|     L2_RQSTS_MISS     |   PMC1  |    17383 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0071 |
+| Runtime unhalted [s] |    0.0076 |
+|      Clock [MHz]     | 3691.1761 |
+|          CPI         |    0.4885 |
+|    L2 request rate   |    0.0022 |
+|     L2 miss rate     |    0.0003 |
+|     L2 miss ratio    |    0.1474 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000001 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8722 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14179 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13348 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1682 |
+|     L2_RQSTS_MISS     |   PMC1  |    510 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.436043e-06 |
+| Runtime unhalted [s] | 4.160540e-06 |
+|      Clock [MHz]     |    3620.1399 |
+|          CPI         |       1.6257 |
+|    L2 request rate   |       0.1928 |
+|     L2 miss rate     |       0.0585 |
+|     L2 miss ratio    |       0.3032 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.001235 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+---------+
+|         Event         | Counter |  Core 3 |
++-----------------------+---------+---------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 8801194 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 4467333 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 4124532 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   15441 |
+|     L2_RQSTS_MISS     |   PMC1  |    5176 |
++-----------------------+---------+---------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0012 |
+| Runtime unhalted [s] |    0.0013 |
+|      Clock [MHz]     | 3691.2171 |
+|          CPI         |    0.5076 |
+|    L2 request rate   |    0.0018 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.3352 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 8.435051
+TempoResolverSistema: 0.162278
+TempoCalularResiduo: 1.496541
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.008238 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 61458560 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 30011470 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 27710160 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   137774 |
+|     L2_RQSTS_MISS     |   PMC1  |    23574 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0082 |
+| Runtime unhalted [s] |    0.0088 |
+|      Clock [MHz]     | 3691.0068 |
+|          CPI         |    0.4883 |
+|    L2 request rate   |    0.0022 |
+|     L2 miss rate     |    0.0004 |
+|     L2 miss ratio    |    0.1711 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8594 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14901 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  14058 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1672 |
+|     L2_RQSTS_MISS     |   PMC1  |    465 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.696030e-06 |
+| Runtime unhalted [s] | 4.372389e-06 |
+|      Clock [MHz]     |    3612.3389 |
+|          CPI         |       1.7339 |
+|    L2 request rate   |       0.1946 |
+|     L2 miss rate     |       0.0541 |
+|     L2 miss ratio    |       0.2781 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.001408 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 10259370 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  5206193 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  4680604 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    19118 |
+|     L2_RQSTS_MISS     |   PMC1  |     6546 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0014 |
+| Runtime unhalted [s] |    0.0015 |
+|      Clock [MHz]     | 3790.6613 |
+|          CPI         |    0.5075 |
+|    L2 request rate   |    0.0019 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.3424 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 11.894703
+TempoResolverSistema: 0.172349
+TempoCalularResiduo: 2.086161
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.011689 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 87795550 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 42863580 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 39172970 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   231731 |
+|     L2_RQSTS_MISS     |   PMC1  |    54817 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0117 |
+| Runtime unhalted [s] |    0.0126 |
+|      Clock [MHz]     | 3729.0572 |
+|          CPI         |    0.4882 |
+|    L2 request rate   |    0.0026 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.2366 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8654 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14358 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  12638 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1567 |
+|     L2_RQSTS_MISS     |   PMC1  |    420 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.533464e-06 |
+| Runtime unhalted [s] | 4.213052e-06 |
+|      Clock [MHz]     |    3871.7981 |
+|          CPI         |       1.6591 |
+|    L2 request rate   |       0.1811 |
+|     L2 miss rate     |       0.0485 |
+|     L2 miss ratio    |       0.2680 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.002000 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 14657630 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  7436660 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  6684792 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    24853 |
+|     L2_RQSTS_MISS     |   PMC1  |     8510 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0020 |
+| Runtime unhalted [s] |    0.0022 |
+|      Clock [MHz]     | 3791.2911 |
+|          CPI         |    0.5074 |
+|    L2 request rate   |    0.0017 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.3424 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 57.355459
+TempoResolverSistema: 0.175204
+TempoCalularResiduo: 10.132925
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.057108 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+-----------+
+|         Event         | Counter |   Core 3  |
++-----------------------+---------+-----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 438955600 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 214247100 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 193322800 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1521035 |
+|     L2_RQSTS_MISS     |   PMC1  |    592943 |
++-----------------------+---------+-----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0571 |
+| Runtime unhalted [s] |    0.0629 |
+|      Clock [MHz]     | 3776.8336 |
+|          CPI         |    0.4881 |
+|    L2 request rate   |    0.0035 |
+|     L2 miss rate     |    0.0014 |
+|     L2 miss ratio    |    0.3898 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8666 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15725 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  14058 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1657 |
+|     L2_RQSTS_MISS     |   PMC1  |    445 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.609745e-06 |
+| Runtime unhalted [s] | 4.614182e-06 |
+|      Clock [MHz]     |    3812.0896 |
+|          CPI         |       1.8146 |
+|    L2 request rate   |       0.1912 |
+|     L2 miss rate     |       0.0514 |
+|     L2 miss ratio    |       0.2686 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.010048 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+----------+
+|         Event         | Counter |  Core 3  |
++-----------------------+---------+----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 73281720 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 37135760 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 33407630 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   108909 |
+|     L2_RQSTS_MISS     |   PMC1  |    37815 |
++-----------------------+---------+----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0100 |
+| Runtime unhalted [s] |    0.0109 |
+|      Clock [MHz]     | 3788.2849 |
+|          CPI         |    0.5068 |
+|    L2 request rate   |    0.0015 |
+|     L2 miss rate     |    0.0005 |
+|     L2 miss ratio    |    0.3472 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 114.101810
+TempoResolverSistema: 0.175029
+TempoCalularResiduo: 20.201842
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.113870 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+-----------+
+|         Event         | Counter |   Core 3  |
++-----------------------+---------+-----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 877905600 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 428438100 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 385383600 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   3021959 |
+|     L2_RQSTS_MISS     |   PMC1  |   1173201 |
++-----------------------+---------+-----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.1139 |
+| Runtime unhalted [s] |    0.1257 |
+|      Clock [MHz]     | 3788.6796 |
+|          CPI         |    0.4880 |
+|    L2 request rate   |    0.0034 |
+|     L2 miss rate     |    0.0013 |
+|     L2 miss ratio    |    0.3882 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8694 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  14858 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13490 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1572 |
+|     L2_RQSTS_MISS     |   PMC1  |    431 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.586279e-06 |
+| Runtime unhalted [s] | 4.359808e-06 |
+|      Clock [MHz]     |    3753.5433 |
+|          CPI         |       1.7090 |
+|    L2 request rate   |       0.1808 |
+|     L2 miss rate     |       0.0496 |
+|     L2 miss ratio    |       0.2742 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.020112 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+-----------+
+|         Event         | Counter |   Core 3  |
++-----------------------+---------+-----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 146568400 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  74259020 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  66764140 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    215119 |
+|     L2_RQSTS_MISS     |   PMC1  |     73391 |
++-----------------------+---------+-----------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.0201 |
+| Runtime unhalted [s] |    0.0218 |
+|      Clock [MHz]     | 3790.5216 |
+|          CPI         |    0.5067 |
+|    L2 request rate   |    0.0015 |
+|     L2 miss rate     |    0.0005 |
+|     L2 miss ratio    |    0.3412 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 1141.360800
+TempoResolverSistema: 0.181073
+TempoCalularResiduo: 198.987176
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 1.141120 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+------------+
+|         Event         | Counter |   Core 3   |
++-----------------------+---------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 8779006000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 4285185000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 3854575000 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   37413090 |
+|     L2_RQSTS_MISS     |   PMC1  |   11643760 |
++-----------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    1.1411 |
+| Runtime unhalted [s] |    1.2574 |
+|      Clock [MHz]     | 3788.6962 |
+|          CPI         |    0.4881 |
+|    L2 request rate   |    0.0043 |
+|     L2 miss rate     |    0.0013 |
+|     L2 miss ratio    |    0.3112 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8694 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15427 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13916 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1710 |
+|     L2_RQSTS_MISS     |   PMC1  |    518 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.627946e-06 |
+| Runtime unhalted [s] | 4.526732e-06 |
+|      Clock [MHz]     |    3778.0157 |
+|          CPI         |       1.7744 |
+|    L2 request rate   |       0.1967 |
+|     L2 miss rate     |       0.0596 |
+|     L2 miss ratio    |       0.3029 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.198874 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+------------+
+|         Event         | Counter |   Core 3   |
++-----------------------+---------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 1464931000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  743205100 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  668311400 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    3445002 |
+|     L2_RQSTS_MISS     |   PMC1  |     988093 |
++-----------------------+---------+------------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    0.1989 |
+| Runtime unhalted [s] |    0.2181 |
+|      Clock [MHz]     | 3789.8892 |
+|          CPI         |    0.5073 |
+|    L2 request rate   |    0.0024 |
+|     L2 miss rate     |    0.0007 |
+|     L2 miss ratio    |    0.2868 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 11384.772250
+TempoResolverSistema: 0.180318
+TempoCalularResiduo: 1980.625108
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+-----------+
+|    Region Info    |   Core 3  |
++-------------------+-----------+
+| RDTSC Runtime [s] | 11.384850 |
+|     call count    |         1 |
++-------------------+-----------+
+
++-----------------------+---------+-------------+
+|         Event         | Counter |    Core 3   |
++-----------------------+---------+-------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 87790010000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 42847760000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 38544620000 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   380057900 |
+|     L2_RQSTS_MISS     |   PMC1  |   116122500 |
++-----------------------+---------+-------------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |   11.3849 |
+| Runtime unhalted [s] |   12.5728 |
+|      Clock [MHz]     | 3788.4434 |
+|          CPI         |    0.4881 |
+|    L2 request rate   |    0.0043 |
+|     L2 miss rate     |    0.0013 |
+|     L2 miss ratio    |    0.3055 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8710 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  15587 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  13632 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   1764 |
+|     L2_RQSTS_MISS     |   PMC1  |    522 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.561643e-06 |
+| Runtime unhalted [s] | 4.573683e-06 |
+|      Clock [MHz]     |    3896.7219 |
+|          CPI         |       1.7896 |
+|    L2 request rate   |       0.2025 |
+|     L2 miss rate     |       0.0599 |
+|     L2 miss ratio    |       0.2959 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 1.980560 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+-------------+
+|         Event         | Counter |    Core 3   |
++-----------------------+---------+-------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 14653460000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  7400526000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  6657763000 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    34739720 |
+|     L2_RQSTS_MISS     |   PMC1  |     9888039 |
++-----------------------+---------+-------------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |    1.9806 |
+| Runtime unhalted [s] |    2.1715 |
+|      Clock [MHz]     | 3788.1809 |
+|          CPI         |    0.5050 |
+|    L2 request rate   |    0.0024 |
+|     L2 miss rate     |    0.0007 |
+|     L2 miss ratio    |    0.2846 |
++----------------------+-----------+
+
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+TempoGerarSistema: 113901.897490
+TempoResolverSistema: 0.189180
+TempoCalularResiduo: 19960.511750
+--------------------------------------------------------------------------------
+Region GerarSistema, Group 1: L2CACHE
++-------------------+------------+
+|    Region Info    |   Core 3   |
++-------------------+------------+
+| RDTSC Runtime [s] | 113.902700 |
+|     call count    |          1 |
++-------------------+------------+
+
++-----------------------+---------+--------------+
+|         Event         | Counter |    Core 3    |
++-----------------------+---------+--------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 877900000000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 428530600000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 385417400000 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   3803411000 |
+|     L2_RQSTS_MISS     |   PMC1  |   1161157000 |
++-----------------------+---------+--------------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |  113.9027 |
+| Runtime unhalted [s] |  125.7442 |
+|      Clock [MHz]     | 3789.1739 |
+|          CPI         |    0.4881 |
+|    L2 request rate   |    0.0043 |
+|     L2 miss rate     |    0.0013 |
+|     L2 miss ratio    |    0.3053 |
++----------------------+-----------+
+
+Region ResolverSistema, Group 1: L2CACHE
++-------------------+----------+
+|    Region Info    |  Core 3  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.000002 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+--------+
+|         Event         | Counter | Core 3 |
++-----------------------+---------+--------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |   8638 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  19963 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  17608 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |   2184 |
+|     L2_RQSTS_MISS     |   PMC1  |    692 |
++-----------------------+---------+--------+
+
++----------------------+--------------+
+|        Metric        |    Core 3    |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.921375e-06 |
+| Runtime unhalted [s] | 5.857763e-06 |
+|      Clock [MHz]     |    3863.7569 |
+|          CPI         |       2.3111 |
+|    L2 request rate   |       0.2528 |
+|     L2 miss rate     |       0.0801 |
+|     L2 miss ratio    |       0.3168 |
++----------------------+--------------+
+
+Region CalcularResiduo, Group 1: L2CACHE
++-------------------+-----------+
+|    Region Info    |   Core 3  |
++-------------------+-----------+
+| RDTSC Runtime [s] | 19.960800 |
+|     call count    |         1 |
++-------------------+-----------+
+
++-----------------------+---------+--------------+
+|         Event         | Counter |    Core 3    |
++-----------------------+---------+--------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 146503400000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  74074410000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  66641380000 |
+| L2_TRANS_ALL_REQUESTS |   PMC0  |    298419100 |
+|     L2_RQSTS_MISS     |   PMC1  |     84680100 |
++-----------------------+---------+--------------+
+
++----------------------+-----------+
+|        Metric        |   Core 3  |
++----------------------+-----------+
+|  Runtime (RDTSC) [s] |   19.9608 |
+| Runtime unhalted [s] |   21.7357 |
+|      Clock [MHz]     | 3788.0721 |
+|          CPI         |    0.5056 |
+|    L2 request rate   |    0.0020 |
+|     L2 miss rate     |    0.0006 |
+|     L2 miss ratio    |    0.2838 |
++----------------------+-----------+
+
