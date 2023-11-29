@@ -1,0 +1,21 @@
+Caio Henrique Ramos Rufino (GRR20224386)
+Frank Wolff Hannemann (GRR20224758)
+
+O código fonte foi separado em 2 diretórios principais (v1 e v2)
+O diretório include de cada versão possui os arquivos header (.h)
+O diretório src de cada versão possui os arquivos da implementação (.c)
+
+libIntervalar contém a estrutura de números intervalares e suas operações básicas
+como multiplicação, subtração, etc.
+
+libSistemaIntervalar contém as funções específicas para a resolução de sistemas lineares
+utilizando números intervalares, ou seja, funções como a eliminação de Gauss e retrossubstituição.
+
+libAjustePolinomialIntervalar contém as funções referentes ao ajuste polinomial em si, então a função
+que utiliza o método dos mínimos quadrados para formar o sistema linear está nela.
+
+A função main() está contida no arquivo ajustePol.c.
+
+Todas as funções possuem comentários nos arquivos .h.
+
+
