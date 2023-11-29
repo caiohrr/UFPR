@@ -30,7 +30,7 @@ def gerarValores(dir, opcao, num_de_testes):
         for line in file:
             entry_l2cache.append(float(line.split("|")[2]))
 
-    with open(dir + "/dat/TEMPO_L3.dat") as file:
+    with open(dir + "/dat/TEMPO_FLOPS_DP.dat") as file:
         for line in file:
             entry_tempo.append(float(line.split(" ")[-1]))
 
@@ -57,12 +57,15 @@ def gerarValores(dir, opcao, num_de_testes):
 
     return (flops, l2cache, l3, tempo)
 
-def plotarGrafico(opcao, flops, l2cache, l3, tempo):
-#def plotarGrafico(opcao, flops_v1, l2cache_v1, l3_v1, tempo_v1, flops_v2, l2cache_v2, l3_v2, tempo_v2):
+#def plotarGrafico(opcao, flops, l2cache, l3, tempo):
+def plotarGrafico(opcao, flops_v1, l2cache_v1, l3_v1, tempo_v1, flops_v2, l2cache_v2, l3_v2, tempo_v2):
 
     plt.style.use('ggplot')
 
-    fig, ((FlopsGraph, L2cacheGraph), (L3Graph, TempoGraph)) = plt.subplots(2, 2)
+    if opcao != "B":
+        fig, ((FlopsGraph, TempoGraph), (L3Graph, L2cacheGraph)) = plt.subplots(2, 2)
+    else:
+        fig, ((FlopsGraph, TempoGraph)) = plt.subplots(2, 1)
 
     if opcao == "A":
         fig.suptitle("Geração do SL", fontsize = 18, fontweight = "bold")
@@ -73,35 +76,44 @@ def plotarGrafico(opcao, flops, l2cache, l3, tempo):
 
     xlabel = "Entrada"
 
-    FlopsGraph.plot(x_values, flops, label = "v2")
+    if opcao != "B":
+        L2cacheGraph.plot(x_values, l2cache_v1, label = "v1", marker='.')
+        L2cacheGraph.plot(x_values, l2cache_v2, label = "v2", marker='.')
+        L2cacheGraph.set_xlabel(xlabel)
+        L2cacheGraph.set_ylabel("L2 miss ratio")
+        L2cacheGraph.set_xscale("log")
+        L2cacheGraph.legend(shadow = True, fancybox = True)
+
+        L3Graph.plot(x_values, l3_v1, label = "v1", marker='.')
+        L3Graph.plot(x_values, l3_v2, label = "v2", marker='.')
+        L3Graph.set_xlabel(xlabel)
+        L3Graph.set_ylabel("L3 bandwidth [MBytes/s]")
+        L3Graph.set_xscale("log")
+        L3Graph.legend(shadow = True, fancybox = True)
+
+    FlopsGraph.plot(x_values, flops_v1, label = "v1", marker='.')
+    FlopsGraph.plot(x_values, flops_v2, label = "v2", marker='.')
     FlopsGraph.set_xlabel(xlabel)
     FlopsGraph.set_ylabel("MFLOPS/s")
+    FlopsGraph.set_xscale("log")
     FlopsGraph.legend(shadow = True, fancybox = True)
-
-    L2cacheGraph.plot(x_values, l2cache, label = "v2")
-    L2cacheGraph.set_xlabel(xlabel)
-    L2cacheGraph.set_ylabel("L2 miss ratio")
-    L2cacheGraph.legend(shadow = True, fancybox = True)
-
-    L3Graph.plot(x_values, l3, label = "v2")
-    L3Graph.set_xlabel(xlabel)
-    L3Graph.set_ylabel("L3 bandwidth [MBytes/s]")
-    L3Graph.legend(shadow = True, fancybox = True)
-
-    TempoGraph.plot(x_values, tempo, label = "v2")
+    
+    TempoGraph.plot(x_values, tempo_v1, label = "v1", marker='.')
+    TempoGraph.plot(x_values, tempo_v2, label = "v2", marker='.')
     TempoGraph.set_xlabel(xlabel)
     TempoGraph.set_ylabel("Tempo (ms)")
-    TempoGraph.set_xscale("log", base = 2)
+    TempoGraph.set_xscale("log")
     TempoGraph.legend(shadow = True, fancybox = True)
 
     plt.tight_layout()
     plt.show()
 
-x_values = [64, 128, 200, 256, 512, 600, 800, 1024]
+x_values = [64, 128, 200, 256, 512, 600, 800, 1024, 2000, 3000, 4096, 6000, 7000, 10000, 50000, 100000, 1000000, 10000000, 100000000]
 
 metrics = ["TEMPO", "L2CACHE", "L3", "FLOPS_DP"]
 num_of_tests = len(x_values)
 
 opcao = input("Insira a opção para testar A (Geração do Sl), B (Resolução do SL) ou C (Cálculo do resíduo): ")
-flops, l2cache, l3, tempo = gerarValores("v2", opcao, num_of_tests)
-plotarGrafico(opcao, flops, l2cache, l3, tempo)
+flops_v1, l2cache_v1, l3_v1, tempo_v1 = gerarValores("v1", opcao, num_of_tests)
+flops_v2, l2cache_v2, l3_v2, tempo_v2 = gerarValores("v2", opcao, num_of_tests)
+plotarGrafico(opcao, flops_v1, l2cache_v1, l3_v1, tempo_v1, flops_v2, l2cache_v2, l3_v2, tempo_v2)

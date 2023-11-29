@@ -10,7 +10,7 @@
 int main() {
 
         uint grau, nPontos;
-        double *vetorX, *vetorY, tempoGerarSistema, tempoResolverSistema;
+        double *vetorX, *vetorY, tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo;
 
         scanf("%u %u", &grau, &nPontos);
         grau++;
@@ -49,11 +49,13 @@ int main() {
 
         imprimirVetorIntervalar(vetorIntervalarCoef, grau);
 
+        tempoCalcularResiduo = timestamp();
         calcularResiduo(vetorIntervalarR, vetorIntervalarCoef, vetorIntervalarX, vetorIntervalarY, grau, nPontos);
+        tempoCalcularResiduo = timestamp() - tempoCalcularResiduo;
         printf("\n");
-        imprimirVetorIntervalar(vetorIntervalarR, nPontos);
+        //imprimirVetorIntervalar(vetorIntervalarR, nPontos);
         printf("\n");
-        printf("%1.8e\n%1.8e\n", tempoGerarSistema, tempoResolverSistema);
+        printf("%lf\n%lf\n%lf\n", tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo);
 
         free(vetorX);
         free(vetorY);

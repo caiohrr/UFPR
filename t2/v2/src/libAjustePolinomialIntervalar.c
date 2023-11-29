@@ -22,24 +22,23 @@ void lerEntrada(double *vetorX, double *vetorY, long long nPontos) {
         }
 }
 
-void calcularResiduo(NumIntervalar *vetorR, NumIntervalar *vetorIntervalarCoef, NumIntervalar *vetorX, NumIntervalar *vetorY, long long grau, long long nPontos) {
 
-        // Gerar um vetor dos expoentes calculando seus valores apenas uma vez, ao inves de recalcular durante o loop
-        NumIntervalar vetorExp[grau];
-        for (long long j = 0; j < grau; j++) {
-                vetorExp[j] = expIntervalar(vetorX[j], j);
-        }
+void calcularResiduo(NumIntervalar *vetorR, NumIntervalar *vetorIntervalarCoef, NumIntervalar *vetorX, NumIntervalar *vetorY, long long grau, long long nPontos) {
 
         for (long long i = 0; i < nPontos; i++) {
                 NumIntervalar tmp;
                 tmp.menor = 0;
                 tmp.maior = 0;
-                for (long long j = 0; j < grau; j++) {
-                       tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorIntervalarCoef[j], vetorExp[j]));  
+
+                for (long long j = grau - 1; j >= 0 ; j--) {
+                        //tmp = multiplicacaoIntervalar(somaIntervalar(tmp, vetorIntervalarCoef[j]), vetorX[i]);
+                        tmp = somaIntervalar(vetorIntervalarCoef[j], multiplicacaoIntervalar(tmp, vetorX[i]));
+                        //tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorIntervalarCoef[j], expIntervalar(vetorX[i], j)));  
                 }
                 vetorR[i] = subtracaoIntervalar(vetorY[i], tmp); 
         } 
 }
+
 
 void gerarVetorCoef(NumIntervalar *vetorX, long long grau, long long nPontos, NumIntervalar *vetorCoef) {
 

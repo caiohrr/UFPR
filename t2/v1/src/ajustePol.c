@@ -54,9 +54,9 @@ int main() {
         LIKWID_MARKER_STOP("CalcularResiduo");
         tempoCalcularResiduo = timestamp() - tempoCalcularResiduo;
 
-        //printf("\n");
-        //imprimirVetorIntervalar(vetorIntervalarR, nPontos);
-        //printf("\n");
+        printf("\n");
+        imprimirVetorIntervalar(vetorIntervalarR, nPontos);
+        printf("\n");
         printf("TempoGerarSistema: %lf\nTempoResolverSistema: %lf\nTempoCalularResiduo: %lf\n", tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo);
 
         free(vetorX);

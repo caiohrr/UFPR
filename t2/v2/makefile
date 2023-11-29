@@ -1,7 +1,7 @@
 LIKWID_HOME=/home/soft/likwid
 
 CC = gcc
-CFLAGS = -I${LIKWID_HOME}/include -Iinclude -DLIKWID_PERFMON -Wall -Wextra -lm -std=gnu11 -O3 -mavx -march=native 
+CFLAGS = -I${LIKWID_HOME}/include -Iinclude -DLIKWID_PERFMON -lm -O3 -mavx -march=native 
 LFLAGS = -L${LIKWID_HOME}/lib -llikwid -lm
 
 OBJ = ajustePol.o libIntervalar.o libSistemaIntervalar.o libAjustePolinomialIntervalar.o utils.o
