@@ -31,9 +31,7 @@ void calcularResiduo(NumIntervalar *vetorR, NumIntervalar *vetorIntervalarCoef, 
                 tmp.maior = 0;
 
                 for (long long j = grau - 1; j >= 0 ; j--) {
-                        //tmp = multiplicacaoIntervalar(somaIntervalar(tmp, vetorIntervalarCoef[j]), vetorX[i]);
                         tmp = somaIntervalar(vetorIntervalarCoef[j], multiplicacaoIntervalar(tmp, vetorX[i]));
-                        //tmp = somaIntervalar(tmp, multiplicacaoIntervalar(vetorIntervalarCoef[j], expIntervalar(vetorX[i], j)));  
                 }
                 vetorR[i] = subtracaoIntervalar(vetorY[i], tmp); 
         } 

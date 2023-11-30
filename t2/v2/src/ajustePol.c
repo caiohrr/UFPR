@@ -46,6 +46,7 @@ int main() {
         LIKWID_MARKER_STOP("ResolverSistema");
         tempoResolverSistema = timestamp() - tempoResolverSistema;
 
+        //Comentado para rodar os testes
         //imprimirVetorIntervalar(vetorIntervalarCoef, grau);
         
         LIKWID_MARKER_START("CalcularResiduo");
@@ -55,11 +56,12 @@ int main() {
         tempoCalcularResiduo = timestamp() - tempoCalcularResiduo;
 
 
+        //Comentado para rodar os testes
         //printf("\n");
         //imprimirVetorIntervalar(vetorIntervalarR, nPontos);
         //printf("\n");
+        
         printf("TempoGerarSistema: %lf\nTempoResolverSistema: %lf\nTempoCalularResiduo: %lf\n", tempoGerarSistema, tempoResolverSistema, tempoCalcularResiduo);
-        //%1.8e
 
         free(vetorX);
         free(vetorY);

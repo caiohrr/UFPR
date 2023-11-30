@@ -18,4 +18,35 @@ A função main() está contida no arquivo ajustePol.c.
 
 Todas as funções possuem comentários nos arquivos .h.
 
+Scripts:
+  
+- perfctr.sh:
+  Este script roda a versão escolhida do programa para todas as entradas, para cada grupo do LIKWID.
+  Ele coloca as saídas no diretório log. Obs: Não proveremos os arquivos que usamos como entrada pois
+  eles são muito grandes e eles foram gerados com o script gerar_todas_entradas.sh.
 
+  
+- filtrar_dados.sh:
+  Este script deve ser rodado após o script perfctr.sh. Ele irá formatar as saídas que estão no diretório 
+  log e colocar elas no diretório dat para possibilitar que o script plotar.py funcione corretamente
+
+  
+- plotar.py:
+  Script feito em python com a lib "matplotlib" para gerar os gráficos que estão no relatório.
+  Para rodar o script, basta digitar "python3 plotar.py" no terminal.
+  As instruções de como utilizá-lo estão na própria execução do script.
+
+  
+- gerar_todas_entradas.sh:
+
+  Este script só usa o script provido (gera_entrada) para gerar 
+  todas as entradas que são necessárias de uma vez só.
+
+OBS:
+    
+    - É necessário dar "make" tanto na versão v1 como na v2 antes de usar.
+
+    - É necessário compilar o programa "gera_entrada.c" para "gera_entrada"(gcc gera_entrada.c -o gera_entrada)
+
+    - Os dados necessário para plotar o gráfico já foram fornecidos. Então não é necessário executar todos esses scripts, 
+    basta rodar o script "plotar.py" para ver os gráficos (esses também estão no diretório "graficos")
